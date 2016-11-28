@@ -34,8 +34,7 @@ module.exports = [{
   // CSS
   entry: [
     './css/normalize.css',
-    './css/example.less',
-    './css/st/dev.styl',
+    //'./css/st/dev.styl',
     './css/theme.scss'
   ],
   output: {
@@ -56,12 +55,6 @@ module.exports = [{
         "css-loader?sourceMap!postcss!stylus-loader?sourceMap"
       )
     }, {
-      test: /\.less$/,
-      loader: ExtractTextPlugin.extract(
-        "style",
-        "css-loader?sourceMap!postcss!less-loader?sourceMap"
-      )
-    }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract(
         'style',
@@ -74,6 +67,6 @@ module.exports = [{
   },
   plugins: plugins,
   resolve: {
-    extensions: ['', '.scss', '.styl', '.less', '.css']
+    extensions: ['', '.scss', '.styl', '.css']
   }
 }];
