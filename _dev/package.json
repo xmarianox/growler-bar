@@ -1,7 +1,7 @@
 {
-  "name": "new-theme",
+  "name": "growlers",
   "version": "1.0.0",
-  "description": "",
+  "description": "Theme for Growlers Bar",
   "main": "index.js",
   "scripts": {
     "build": "webpack --progress -p",
@@ -29,5 +29,6 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^2.1.2",
     "webpack": "^1.13.1"
-  }
+  },
+  "dependencies": {}
 }
