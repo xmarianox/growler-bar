@@ -11,27 +11,11 @@
   {/block}
 
   {block name='product_name'}
-    <h1 class="h2" itemprop="name"><a href="{$product.url}">{$product.name}</a></h1>
+    <h1 class="product_name" itemprop="name"><a href="{$product.url}">{$product.name}</a></h1>
   {/block}
 
   {block name='product_description_short'}
     <div class="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
-  {/block}
-
-  {block name='product_list_actions'}
-    <div class="product-list-actions">
-      {if $product.add_to_cart_url}
-          <a
-            class = "add-to-cart"
-            href  = "{$product.add_to_cart_url}"
-            rel   = "nofollow"
-            data-id-product="{$product.id_product}"
-            data-id-product-attribute="{$product.id_product_attribute}"
-            data-link-action="add-to-cart"
-          >{l s='Add to cart' d='Shop.Theme.Actions'}</a>
-      {/if}
-      {hook h='displayProductListFunctionalButtons' product=$product}
-    </div>
   {/block}
 
   {block name='product_variants'}
@@ -74,6 +58,22 @@
       {* availability may take the values "available" or "unavailable" *}
       <span class='product-availability {$product.availability}'>{$product.availability_message}</span>
     {/if}
+  {/block}
+
+  {block name='product_list_actions'}
+    <div class="product-list-actions">
+      {if $product.add_to_cart_url}
+          <a
+            class = "btn btn_add_to_cart"
+            href  = "{$product.add_to_cart_url}"
+            rel   = "nofollow"
+            data-id-product="{$product.id_product}"
+            data-id-product-attribute="{$product.id_product_attribute}"
+            data-link-action="add-to-cart"
+          >{l s='Add to cart' d='Shop.Theme.Actions'}</a>
+      {/if}
+      {hook h='displayProductListFunctionalButtons' product=$product}
+    </div>
   {/block}
 
   {hook h='displayProductListReviews' product=$product}

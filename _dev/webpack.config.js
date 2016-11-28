@@ -33,8 +33,6 @@ module.exports = [{
 }, {
   // CSS
   entry: [
-    './css/normalize.css',
-    //'./css/st/dev.styl',
     './css/theme.scss'
   ],
   output: {
@@ -48,13 +46,15 @@ module.exports = [{
         "style",
         "css-loader?sourceMap!postcss!sass-loader?sourceMap"
       )
-    }, {
-      test: /\.styl$/,
-      loader: ExtractTextPlugin.extract(
-        "style",
-        "css-loader?sourceMap!postcss!stylus-loader?sourceMap"
-      )
-    }, {
+    }
+    // , {
+    //   test: /\.styl$/,
+    //   loader: ExtractTextPlugin.extract(
+    //     "style",
+    //     "css-loader?sourceMap!postcss!stylus-loader?sourceMap"
+    //   )
+    // }
+    , {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract(
         'style',
@@ -67,6 +67,6 @@ module.exports = [{
   },
   plugins: plugins,
   resolve: {
-    extensions: ['', '.scss', '.styl', '.css']
+    extensions: ['', '.scss', '.css']
   }
 }];
