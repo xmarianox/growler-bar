@@ -66,6 +66,10 @@ table {
   font-family: "gotham_bookregular";
   src: url(../css/c2fa61b1783fc3a87b58bb53151f4207.woff2) format("woff2"), url(../css/96589161d507abe6ec5dc748711b1c6b.woff) format("woff"); }
 
+@font-face {
+  font-family: "gothambold";
+  src: url(../css/7d62151b578d550617bdfe8ecd12643c.woff2) format("woff2"), url(../css/fccb342e0944c69b2b4bb67a240c75c1.woff) format("woff"); }
+
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -316,11 +320,39 @@ body {
     margin: 0 auto; }
 
 .product_name {
+  font-family: "gothambold";
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  text-align: center; }
+  .product_name a {
+    text-decoration: none;
+    color: #000000; }
+
+.product-description-short {
+  width: 100%;
+  height: auto;
+  font-family: "gothammedium";
+  text-align: center; }
+  .product-description-short p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
+
+.product-price-and-shipping {
+  width: 100%;
+  height: auto;
+  font-family: "gothambold";
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 24px;
   line-height: 1.5rem;
   text-align: center; }
-  .product_name a {
-    text-decoration: none;
-    color: #000000; }
+
+.product-list-actions {
+  width: 100%;
+  height: auto;
+  padding: 16px 0; }

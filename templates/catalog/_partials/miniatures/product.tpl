@@ -45,20 +45,19 @@
     {/if}
   {/block}
 
-  {block name='product_flags'}
+  {*{block name='product_flags'}
     <ul class="product-flags">
       {foreach from=$product.flags item=flag}
         <li class="{$flag.type}">{$flag.label}</li>
       {/foreach}
     </ul>
-  {/block}
+  {/block}*}
 
-  {block name='product_availability'}
+  {*{block name='product_availability'}
     {if $product.show_availability}
-      {* availability may take the values "available" or "unavailable" *}
       <span class='product-availability {$product.availability}'>{$product.availability_message}</span>
     {/if}
-  {/block}
+  {/block}*}
 
   {block name='product_list_actions'}
     <div class="product-list-actions">
