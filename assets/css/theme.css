@@ -355,11 +355,42 @@ body {
     line-height: 2.5rem;
     color: #6c6c6c; }
 
+.ui-autocomplete
+.ui-front.ui-menu
+.ui-widget
+.ui-widget-content
+.ui-corner-all {
+  border: 1px solid #6c6c6c;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px; }
+  .ui-autocomplete
+.ui-front.ui-menu
+.ui-widget
+.ui-widget-content
+.ui-corner-all .ui-menu .ui-menu-item {
+    font-family: "gotham_bookregular";
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
+
 .products {
   width: 100%;
   height: auto;
   overflow: hidden;
   padding: 16px; }
+
+.products-section-title {
+  font-family: "gotham_bookregular";
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  color: #6c6c6c;
+  text-align: center;
+  text-transform: uppercase; }
 
 .product-miniature {
   width: 100%;
