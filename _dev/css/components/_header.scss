@@ -1,0 +1,178 @@
+// =============================================================================
+// - header element
+// =============================================================================
+#header {
+	@include size(100%, 56px);
+	background-color: $black;
+	//overflow: hidden;
+	padding: 8px;
+	// position
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	// flex
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+	// Logo
+	& > .logo {
+		display: inline-block;
+		margin: auto;
+		margin-left: 0px;
+		margin-right: 10px;
+	}
+
+	// =============================================================================
+	// - Responsive
+	// =============================================================================
+	//@media #{$breakpoint-tablet-port} {}
+	//@media #{$breakpoint-tablet-land} {}
+	@media #{$breakpoint-smartphone-big} {
+		@include size(100%, 66px);
+		padding: 16px 12px;
+	}
+
+	@media #{$breakpoint-smartphone-big-landscape} {}
+}
+
+// =============================================================================
+// - header-nav
+// =============================================================================
+.header-nav {
+	@include size(100%, auto);
+	margin: auto;
+	margin-right: 0px;
+	//text
+	color: $white;
+	// flex
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+	& > .btn_lines {
+		margin: auto;
+		margin-right: 0px;
+	}
+
+	@media #{$breakpoint-smartphone-big-landscape} {
+		max-width: 250px;
+	}
+}
+
+.user-info {
+	margin: auto;
+
+	.login {
+		//@include size(30px, 30px);
+		@include size(26px, 26px);
+		background: url(../img/icons/ic_user.svg) center center no-repeat;
+		display: block;
+		// texts
+		text-indent: -9999px;
+		text-decoration: none;
+	}
+}
+
+.blockcart {
+	margin: auto;
+
+	.header {
+		& > a {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			//
+			text-decoration: none;
+
+			.ic_cart {
+				// texts
+				text-indent: -9999px;
+			}
+
+			.badge {
+				@include size(16px, 16px);
+				@include border-radius(50%);
+				background-color: $orange;
+				display: block;
+				// texts
+				font-family: $gothamMedium;
+				@include font-size(11px);
+				@include line-height(16px);
+				text-align: center;
+				color: $white;
+				// postion
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 2;
+			}
+		}
+	}
+}
+
+#contact-link {
+	margin: auto;
+
+	& > a {
+		//@include size(29px, 33px);
+		@include size(26px, 27px);
+		background: url(../img/icons/ic_faqs.svg) center center no-repeat;
+		display: block;
+		// texts
+		text-indent: -9999px;
+		text-decoration: none;
+	}
+}
+
+
+// =============================================================================
+// - header_top
+// =============================================================================
+.header-top {
+	@include size(100%, auto);
+	background: rgba(0,0,0,.8);
+	overflow: hidden;
+	display: none;
+	// position
+	position: fixed;
+	top: 56px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	@include transition(200ms);
+	@include opacity(0);
+
+	&.visible {
+		display: block;
+		@include opacity(1);
+	}	
+}
+
+// =============================================================================
+// - menu
+// =============================================================================
+.menu {
+	@include size(100%, 100%);
+	overflow: hidden;
+	padding: 16px;
+	// texts
+	font-family: $gothamMedium;
+	text-align: center;
+
+	.category {
+		a {
+			@include font-size(30px);
+			@include line-height(30px);
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}

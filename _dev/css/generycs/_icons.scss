@@ -1,0 +1,43 @@
+// =============================================================================
+// ICONS
+// =============================================================================
+.ic {
+	display: inline-block;
+
+	&_growler_logo {
+		background: url(../img/Growlers-logo-desktop.svg) center center no-repeat;
+		//@include size(230px, 27px);
+		@include size(160px, 18px);
+	}
+
+	// header
+	&_cart {
+		background: url(../img/icons/ic_shopping_cart.svg) center center no-repeat;
+		@include size(26px, 24px);
+			//@include size(33px, 28px);
+	}
+
+	&_search {
+		background: url(../img/icons/ic_search.svg) center center no-repeat;
+		@include size(26px, 26px);
+	}
+
+
+	@media #{$breakpoint-smartphone-medium} {
+		&_growler_logo {
+			@include size(190px, 22px);
+		}
+	}
+
+	@media #{$breakpoint-smartphone-big} {
+		&_growler_logo {
+			@include size(230px, 27px);
+		}
+	}
+
+	// @media #{$breakpoint-tablet-land} {
+	// 	&_growler_logo {
+	// 		@include size(350px, 41px);
+	// 	}
+	// }
+}
