@@ -151,6 +151,9 @@ body {
   .header-nav > .btn_lines {
     margin: auto;
     margin-right: 0px; }
+  @media only screen and (min-width: 40em) {
+    .header-nav {
+      max-width: 250px; } }
 
 .user-info {
   margin: auto; }
@@ -358,6 +361,10 @@ body {
     line-height: 40px;
     line-height: 2.5rem;
     color: #6c6c6c; }
+  @media (min-width: 47em) {
+    .search-widget {
+      max-width: 600px;
+      margin: 0 auto; } }
 
 .ui-autocomplete
 .ui-front.ui-menu
@@ -385,6 +392,13 @@ body {
   height: auto;
   overflow: hidden;
   padding: 16px; }
+  @media (min-width: 47em) {
+    .products {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between; } }
 
 .products-section-title {
   font-family: "Gotham-Light";
@@ -395,12 +409,23 @@ body {
   color: #6c6c6c;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 47em) {
+    .products-section-title {
+      font-size: 36px;
+      font-size: 2.25rem;
+      line-height: 46px;
+      line-height: 2.875rem; } }
 
 .product-miniature {
   width: 100%;
   height: auto;
   overflow: hidden;
   margin-bottom: 16px; }
+  @media (min-width: 47em) {
+    .product-miniature {
+      flex-basis: 45%;
+      margin: auto;
+      margin-bottom: 16px; } }
 
 .product-thumbnail {
   width: 100%;

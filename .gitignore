@@ -8,6 +8,7 @@
 !modules/
 !themes/
 !override/
+!_dev/
 
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
@@ -20,6 +21,7 @@
 
 #themes/*
 #!themes/my-theme/
+
 
 # Private files
 # The following files contain your database credentials and other personal data.
@@ -51,8 +53,8 @@ admin-dev/backups/
 admin-dev/export/
 admin-dev/import/
 download/
-/config/theme.yml
 
+#/config/theme.yml
 node_modules/
 
 /img/*

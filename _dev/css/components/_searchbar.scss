@@ -1,0 +1,63 @@
+// =============================================================================
+// - searchbar element
+// =============================================================================
+.search-widget {
+    @include size(100%, auto);
+    padding: 16px;
+
+    form {
+        @include size(100%, auto);
+        border: 1px solid $gray;
+        overflow: hidden;
+        // flex
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    input {
+        @include size(100%, 40px); //58px
+        border: none;
+        border-right: 1px solid $gray;
+        @include border-radius(0px);
+        padding: 0 8px;
+        // texts
+        font-family: $gothamBook;
+        @include font-size(18px);
+        @include line-height(40px);
+        color: $gray;
+    }
+    //.ui-autocomplete-input {}
+
+
+    @media #{$breakpoint-tablet-port} {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.ui-autocomplete
+.ui-front.ui-menu
+.ui-widget
+.ui-widget-content
+.ui-corner-all {
+    border: 1px solid $gray;
+    @include border-radius(0px);
+
+    // .ui-widget-content {
+    //     border: 1px solid $gray;
+    //     @include border-radius(0px);
+    // }
+
+    .ui-menu {
+        .ui-menu-item {
+            font-family: $gothamBook;
+            @include font-size(18px);
+            @include line-height(24px);
+        }
+    }
+}
+
