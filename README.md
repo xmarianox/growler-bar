@@ -17,7 +17,7 @@ Clone this repository and move the `StarterTheme` into `themes` folder.
 ```bash
 # in PrestaShop folder
 $ cd themes
-$ git clone https://github.com/PrestaShop/StarterTheme.git YOUR_THEME_NAME
+$ git clone https://github.com/xmarianox/growler-bar.git
 ```
 
 ## How to use the starter theme to create a theme
@@ -27,13 +27,13 @@ $ git clone https://github.com/PrestaShop/StarterTheme.git YOUR_THEME_NAME
 First of all, you need to rename `config/theme.dist.yml` to `config/theme.yml` and edit it according to your theme name.
 
 ```
-name: YOUR_THEME_DIRECTORY_NAME
-display_name: YOUR THEME NAME
+name: growler
+display_name: Growler Theme
 version: 1.0.0
 author:
-  name: "PrestaShop Team"
-  email: "pub@prestashop.com"
-  url: "http://www.prestashop.com"
+  name: "Mariano Molina"
+  email: "molina.mariano23@gmail.com"
+  url: "http://marianomolina.xyz"
 
 meta:
   compatibility:
@@ -114,10 +114,6 @@ Themes architecture has changed a lot since PrestaShop 1.7.
 | `plugins` | Contains the Smarty extensions required by the theme, if any; |
 | `templates` | Contains the templates of the theme, ordered by domain categories |
 | `preview.png` | Should be a thumbnail of your theme homepage, displayed in the back office |
-
-## Contributing
-
-Take a look at our [Contributing guide](CONTRIBUTING.md)
 
 ## Update workflow
 
