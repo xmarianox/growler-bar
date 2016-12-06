@@ -79,27 +79,21 @@
 		<div id="page">
 			<div class="header-container">
 				<header id="header">
-					{capture name='displayBanner'}{hook h='displayBanner'}{/capture}
-					{if $smarty.capture.displayBanner}
-						<div class="banner">
-							<div class="container">
-								<div class="row">
-									{$smarty.capture.displayBanner}
-								</div>
-							</div>
-						</div>
-					{/if}
-
 					<div class="container">
 						<div class="row">
-							<div id="header_logo">
-								<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
-									<img class="logo img-responsive" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"{if isset($logo_image_width) && $logo_image_width} width="{$logo_image_width}"{/if}{if isset($logo_image_height) && $logo_image_height} height="{$logo_image_height}"{/if}/>
-								</a>
-							</div>
-
 							{capture name='displayNav'}{hook h='displayNav'}{/capture}
 							{if $smarty.capture.displayNav}
+								<div id="header_logo">
+									<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
+										{*<img class="logo img-responsive" 
+											src="{$logo_url}" 
+											alt="{$shop_name|escape:'html':'UTF-8'}"{if isset($logo_image_width) && $logo_image_width} 
+											width="{$logo_image_width}"{/if}{if isset($logo_image_height) && $logo_image_height} 
+											height="{$logo_image_height}"{/if}/>*}
+										<img src="images/Growlers-logo-desktop.svg" alt="{$shop_name|escape:'html':'UTF-8'}" />
+									</a>
+								</div>
+
 								<div class="nav">
 									<div class="container">
 										<div class="row">
@@ -114,7 +108,6 @@
 					</div>				
 				</header>
 			</div>
-			
 			<div class="columns-container">
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}
