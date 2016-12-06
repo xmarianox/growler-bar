@@ -77,6 +77,7 @@
 			</div>
 		{/if}
 		<div id="page">
+			
 			<div class="header-container">
 				<header id="header">
 					<div class="container">
@@ -94,6 +95,8 @@
 									</a>
 								</div>
 
+								{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
+
 								<div class="nav">
 									<div class="container">
 										<div class="row">
@@ -102,12 +105,11 @@
 									</div>
 								</div>
 							{/if}
-
-							{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 						</div>
 					</div>				
 				</header>
 			</div>
+
 			<div class="columns-container">
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}
