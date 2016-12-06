@@ -1,9 +1,15 @@
 @import 'bootstrap_lib/_variables';
 
 //------- FONTS
+$gothamLight  : 'Gotham-Light';
+$gothamBook   : 'Gotham-Book';
+$gothamMedium : 'Gotham-Medium';
+$gothamBold   : 'Gotham-Bold';
+
+//------- FONTS
 $font-family:				  		Arial, Helvetica, sans-serif;
 $font:						  		normal 13px/18px $font-family;
-$font-custom:                 		'Open Sans', sans-serif;
+$font-custom:                 		$gothamBook, sans-serif;
 $font-icon:                   		"FontAwesome";
 $fa-css-prefix:       				icon !default;
 

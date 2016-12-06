@@ -17,7 +17,7 @@ table#product_comparison tbody tr td.comparison_infos {
 table#product_comparison tbody tr td.td_empty {
   vertical-align: bottom; }
   table#product_comparison tbody tr td.td_empty > span {
-    font: 600 18px/22px "Open Sans", sans-serif;
+    font: 600 18px/22px "Gotham-Book", sans-serif;
     text-transform: uppercase;
     color: #555454; }
 table#product_comparison .remove {
@@ -59,7 +59,7 @@ table#product_comparison .button-container a, table#product_comparison .button-c
   margin-bottom: 10px; }
 table#product_comparison .comparison_unit_price {
   font-size: 17px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gotham-Book", sans-serif;
   color: #333;
   font-style: italic; }
 table#product_comparison .product-rating {

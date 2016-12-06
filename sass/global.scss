@@ -4,6 +4,7 @@
 @import "compass";
 @import "compass/reset";
 @import "theme_variables";
+@import "fonts";
 @import "bootstrap";
 @import "font-awesome/font-awesome";
 @import "icons";
@@ -60,7 +61,7 @@ textarea {
 header {
 	z-index: 1;
 	position: relative;
-	background: $light-background;
+	background: black;
 	padding-bottom: 15px;
 	.banner {
 		background: black;
@@ -70,7 +71,7 @@ header {
 		}
 	}
 	.nav {
-		background: $dark-background;
+		background: black;
 		.row {
 			margin: 0px;
 		}

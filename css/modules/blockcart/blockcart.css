@@ -40,7 +40,7 @@
         display: none !important; } }
     .shopping_cart > a:first-child b {
       color: #fff;
-      font: 600 18px/22px "Open Sans", sans-serif;
+      font: 600 18px/22px "Gotham-Book", sans-serif;
       padding-right: 5px; }
     .shopping_cart > a:first-child:before {
       content: "\f07a";

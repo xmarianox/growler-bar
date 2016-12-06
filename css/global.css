@@ -46,6 +46,18 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+@font-face {
+  font-family: "Gotham-Light";
+  src: "../fonts/Gotham-Light"; }
+@font-face {
+  font-family: "Gotham-Book";
+  src: "../fonts/Gotham-Book"; }
+@font-face {
+  font-family: "Gotham-Medium";
+  src: "../fonts/Gotham-Medium"; }
+@font-face {
+  font-family: "Gotham-Bold";
+  src: "../fonts/Gotham-Bold"; }
 /*!
  * Bootstrap v3.0.0
  *
@@ -5710,8 +5722,7 @@ body {
   color: #777; }
   body.content_only {
     background: none;
-    min-width: 0px;
-  }
+    min-width: 0px; }
 
 textarea {
   resize: none; }
@@ -5734,7 +5745,7 @@ textarea {
 header {
   z-index: 1;
   position: relative;
-  background: #fff;
+  background: black;
   padding-bottom: 15px; }
   header .banner {
     background: black;
@@ -5742,7 +5753,7 @@ header {
     header .banner .row {
       margin: 0px; }
   header .nav {
-    background: #333; }
+    background: black; }
     header .nav .row {
       margin: 0px; }
     header .nav nav {
@@ -5771,7 +5782,7 @@ header {
 #center_column .page_product_box h3 {
   color: #555454;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gotham-Book", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
@@ -6262,7 +6273,7 @@ table.table_block td {
   white-space: nowrap; }
 
 .price.product-price {
-  font: 600 21px/26px "Open Sans", sans-serif;
+  font: 600 21px/26px "Gotham-Book", sans-serif;
   color: #333; }
 
 .old-price {
@@ -6278,7 +6289,7 @@ table.table_block td {
 .price-percent-reduction {
   background: #f13340;
   border: 1px solid #d02a2c;
-  font: 600 21px/24px "Open Sans", sans-serif;
+  font: 600 21px/24px "Gotham-Book", sans-serif;
   color: #fff;
   padding: 0 5px 0 3px;
   display: inline-block; }
@@ -6473,7 +6484,7 @@ table.table_block td {
       #home-page-tabs > li {
         width: 100%; } }
     #home-page-tabs > li a {
-      font: 600 21px/24px "Open Sans", sans-serif;
+      font: 600 21px/24px "Gotham-Book", sans-serif;
       color: #555454;
       text-transform: uppercase;
       border: none;
@@ -6513,7 +6524,7 @@ table.table_block td {
 
 .block .title_block,
 .block h4 {
-  font: 600 18px/22px "Open Sans", sans-serif;
+  font: 600 18px/22px "Gotham-Book", sans-serif;
   color: #555454;
   background: #f6f6f6;
   border-top: 5px solid #333;
@@ -6610,7 +6621,7 @@ table.table_block td {
   padding: 1px 6px; }
 
 .page-heading {
-  font: 600 18px/22px "Open Sans", sans-serif;
+  font: 600 18px/22px "Gotham-Book", sans-serif;
   color: #555454;
   text-transform: uppercase;
   padding: 0px 0px 17px 0px;
@@ -6637,7 +6648,7 @@ table.table_block td {
     margin-bottom: 0; }
 
 .page-subheading {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gotham-Book", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: #555454;
@@ -6650,7 +6661,7 @@ table.table_block td {
 h3.page-product-heading {
   color: #555454;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gotham-Book", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
@@ -7252,7 +7263,7 @@ div.star a:hover {
       .footer-container #footer a:hover {
         color: #fff; }
     .footer-container #footer h4 {
-      font: 600 18px/22px "Open Sans", sans-serif;
+      font: 600 18px/22px "Gotham-Book", sans-serif;
       color: #fff;
       margin: 0 0 13px 0;
       cursor: pointer; }
@@ -7517,11 +7528,11 @@ a.price_discount_delete {
 #cart_summary tfoot td.price {
   text-align: right; }
 #cart_summary tfoot td.total_price_container span {
-  font: 600 18px/22px "Open Sans", sans-serif;
+  font: 600 18px/22px "Gotham-Book", sans-serif;
   color: #555454;
   text-transform: uppercase; }
 #cart_summary tfoot td#total_price_container {
-  font: 600 21px/25px "Open Sans", sans-serif;
+  font: 600 21px/25px "Gotham-Book", sans-serif;
   color: #333;
   background: #fff; }
 
@@ -7608,7 +7619,7 @@ a.price_discount_delete {
 .cart_voucher {
   vertical-align: top !important; }
   .cart_voucher h4 {
-    font: 600 18px/22px "Open Sans", sans-serif;
+    font: 600 18px/22px "Gotham-Book", sans-serif;
     color: #555454;
     text-transform: uppercase;
     padding: 7px 0 10px 0; }
@@ -8180,12 +8191,12 @@ table.discount i {
     #pagenotfound .pagenotfound .img-404 img {
       max-width: 100%; }
   #pagenotfound .pagenotfound h1 {
-    font: 600 28px/34px "Open Sans", sans-serif;
+    font: 600 28px/34px "Gotham-Book", sans-serif;
     color: #333;
     text-transform: uppercase;
     margin-bottom: 7px; }
   #pagenotfound .pagenotfound p {
-    font: 600 16px/20px "Open Sans", sans-serif;
+    font: 600 16px/20px "Gotham-Book", sans-serif;
     color: #555454;
     text-transform: uppercase;
     border-bottom: 1px solid #d6d4d4;
@@ -8393,7 +8404,7 @@ div.star.star_hover:after {
 #facebook_block h4 {
   padding: 35px 0 0 0;
   margin: 0 0 12px 0;
-  font: 300 21px/25px "Open Sans", sans-serif;
+  font: 300 21px/25px "Gotham-Book", sans-serif;
   color: #6f6d6d; }
   @media (max-width: 991px) {
     #facebook_block h4 {
@@ -8457,7 +8468,7 @@ div.star.star_hover:after {
     overflow: hidden; }
   #cmsinfo_block h3 {
     margin: 0 0 5px 0;
-    font: 300 21px/25px "Open Sans", sans-serif;
+    font: 300 21px/25px "Gotham-Book", sans-serif;
     color: #6f6d6d; }
     @media (max-width: 1199px) {
       #cmsinfo_block h3 {
