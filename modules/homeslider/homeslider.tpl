@@ -43,6 +43,14 @@
 				{/foreach}
 			</ul>
 		</div>
+
+		<div class="container">
+			<div class="row">
+				<div>La mejor variedad de cervezas y merchandising.</div>
+				<div>Comprá en forma rápida, fácil y segura.</div>
+				<div>Envíos a todo el país.</div>
+			</div>
+		</div>
 	{/if}
 <!-- /Module HomeSlider -->
 {/if}
