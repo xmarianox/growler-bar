@@ -32,7 +32,7 @@
     justify-content: center;
     -webkit-align-items: center;
     align-items: center; }
-    .shopping_cart > a:first-child .ajax_cart_quantity {
+    .shopping_cart > a:first-child .ajax_cart_quantity, .shopping_cart > a:first-child .ajax_cart_no_product {
       width: 20px;
       height: 20px;
       display: block;
