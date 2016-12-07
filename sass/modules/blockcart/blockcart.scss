@@ -5,28 +5,11 @@
 ********************************************************************/
 #header .shopping_cart {
 	position: relative;
-	//float: right;
-	//padding-top: 50px;
-	> a:first-child {
-		&:after {
-			content: "\f0d7";
-			font-family: $font-icon;
-			display: inline-block;
-			float: right;
-			font-size: 18px;
-			color: #686666;
-			padding: 6px 0 0 0;
-		}
-	}
-	> a:first-child:hover {
-		&:after {
-			content: "\f0d8";
-			padding: 4px 0px 2px 0px;
-		}
-	}
 }
 .shopping_cart {
-	width: 270px;
+	width: 50px;
+	height: 50px;
+
 	@media (max-width: $screen-xs) {
 		padding-top: 20px;
 	}
@@ -36,31 +19,49 @@
 		width: 100%;
 	}
 	> a:first-child {
-		padding: 7px 10px 14px 16px;
-		background: $dark-background;
+		width: 50px;
+		height: 50px;
 		display: block;
-		font-weight: bold;
-		color: #777777;
-		text-shadow: 1px 1px rgba(0,0,0,0.2);
+		color: white;
 		overflow: hidden;
-		span.ajax_cart_product_txt, span.ajax_cart_product_txt_s {
-			@media (min-width: $screen-sm) and (max-width: $screen-sm-max) { // min 768px max 991px
-				display: none !important;
-			}
+		position: relative;
+		//
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+		@include align-items(center);
+		// span.ajax_cart_product_txt, 
+		// span.ajax_cart_product_txt_s {
+		// 	@media (min-width: $screen-sm) and (max-width: $screen-sm-max) { // min 768px max 991px
+		// 		display: none !important;
+		// 	}
+		// }
+
+		.ajax_cart_quantity {
+			width: 20px;
+			height: 20px;
+			display: block;
+			background-color: #ff9b19;
+			@include border-radius(50%);
+			//
+			text-align: center;
+			line-height: 20px;
+			// position
+			position: absolute;
+			top: 1px;
+			right: 1px;
 		}
-		b {
-			color: $light-text-color;
-			font: 600 18px/22px $font-custom;
-			padding-right: 5px;
-		}
+
 		&:before {
 			content: "\f07a";
 			font-family: $font-icon;
 			display: inline-block;
-			font-size: 23px;
-			line-height: 23px;
-			color: $light-text-color;
-			padding-right: 15px;
+			font-size: 30px;
+			line-height: 30px;
+			color: white;
+			margin: auto;
+			//padding-right: 15px;
 		}
 	}
 	.ajax_cart_total {

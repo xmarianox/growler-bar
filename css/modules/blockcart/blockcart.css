@@ -3,20 +3,10 @@
 ********************************************************************/
 #header .shopping_cart {
   position: relative; }
-  #header .shopping_cart > a:first-child:after {
-    content: "\f0d7";
-    font-family: "FontAwesome";
-    display: inline-block;
-    float: right;
-    font-size: 18px;
-    color: #686666;
-    padding: 6px 0 0 0; }
-  #header .shopping_cart > a:first-child:hover:after {
-    content: "\f0d8";
-    padding: 4px 0px 2px 0px; }
 
 .shopping_cart {
-  width: 270px; }
+  width: 50px;
+  height: 50px; }
   @media (max-width: 480px) {
     .shopping_cart {
       padding-top: 20px; } }
@@ -26,28 +16,43 @@
       float: none;
       width: 100%; } }
   .shopping_cart > a:first-child {
-    padding: 7px 10px 14px 16px;
-    background: #333;
+    width: 50px;
+    height: 50px;
     display: block;
-    font-weight: bold;
-    color: #777777;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    overflow: hidden; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
-        display: none !important; } }
-    .shopping_cart > a:first-child b {
-      color: #fff;
-      font: 600 18px/22px "Gotham-Book", sans-serif;
-      padding-right: 5px; }
+    color: white;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .shopping_cart > a:first-child .ajax_cart_quantity {
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-color: #ff9b19;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 20px;
+      position: absolute;
+      top: 1px;
+      right: 1px; }
     .shopping_cart > a:first-child:before {
       content: "\f07a";
       font-family: "FontAwesome";
       display: inline-block;
-      font-size: 23px;
-      line-height: 23px;
-      color: #fff;
-      padding-right: 15px; }
+      font-size: 30px;
+      line-height: 30px;
+      color: white;
+      margin: auto; }
   .shopping_cart .ajax_cart_total {
     display: none !important; }
   .shopping_cart .block_cart_expand:after, .shopping_cart .block_cart_collapse:after {

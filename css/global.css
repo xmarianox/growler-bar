@@ -5709,25 +5709,37 @@ td.visible-print {
   background: url(../img/Growlers-logo-desktop.svg) center center no-repeat;
   width: 230px;
   height: 27px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .icon-growlers {
       width: 350px;
       height: 41px; } }
 
 .icon-envios {
   background: url(../img/icon/ic_envios.svg) center center no-repeat;
-  width: 90px;
-  height: 51px; }
+  width: 70px;
+  height: 39px; }
+  @media (min-width: 1200px) {
+    .icon-envios {
+      width: 90px;
+      height: 51px; } }
 
 .icon-variedad {
   background: url(../img/icon/ic_variedad.svg) center center no-repeat;
-  width: 103px;
-  height: 62px; }
+  width: 75px;
+  height: 52px; }
+  @media (min-width: 1200px) {
+    .icon-variedad {
+      width: 103px;
+      height: 62px; } }
 
 .icon-mobile, .icon-mobile-phone {
   background: url(../img/icon/ic_mobile.svg) center center no-repeat;
-  width: 38px;
-  height: 69px; }
+  width: 28px;
+  height: 54px; }
+  @media (min-width: 1200px) {
+    .icon-mobile, .icon-mobile-phone {
+      width: 38px;
+      height: 69px; } }
   .icon-mobile:before, .icon-mobile-phone:before {
     content: ''; }
 
@@ -5807,6 +5819,17 @@ header {
   @media (min-width: 768px) {
     header {
       padding: 30px 40px; } }
+  header nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: stretch;
+    justify-content: stretch;
+    -webkit-align-items: center;
+    align-items: center; }
 
 .ie8 #header #header_logo {
   width: 350px; }

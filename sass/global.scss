@@ -103,6 +103,15 @@ header {
 		padding: 30px 40px;
 	}
 
+	nav {
+		// flex
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include justify-content(stretch);
+		@include align-items(center);
+	}
+
 	// .nav {
 	// 	background: black;
 	// 	.row {
