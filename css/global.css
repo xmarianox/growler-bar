@@ -598,7 +598,6 @@ pre {
 .col-sm-2,
 .col-sm-3,
 .col-sm-4,
-header .row #header_logo,
 .col-sm-5,
 .col-sm-6,
 .col-sm-7,
@@ -693,7 +692,6 @@ header .row #header_logo,
   .col-sm-2,
   .col-sm-3,
   .col-sm-4,
-  header .row #header_logo,
   .col-sm-5,
   .col-sm-6,
   .col-sm-7,
@@ -712,7 +710,7 @@ header .row #header_logo,
   .col-sm-3 {
     width: 25%; }
 
-  .col-sm-4, header .row #header_logo {
+  .col-sm-4 {
     width: 33.33333%; }
 
   .col-sm-5 {
@@ -5707,6 +5705,11 @@ td.visible-print {
 .icon-medium:before {
   content: ""; }
 
+.icon-growlers {
+  background: url(../img/Growlers-logo-desktop.svg) center center no-repeat;
+  width: 350px;
+  height: 41px; }
+
 a:hover {
   text-decoration: none; }
 
@@ -5743,38 +5746,21 @@ textarea {
   margin-bottom: 34px; }
 
 header {
+  width: 100%;
+  height: auto;
   z-index: 1;
   position: relative;
   background: black;
-  padding-bottom: 15px; }
-  header .banner {
-    background: black;
-    max-height: 100%; }
-    header .banner .row {
-      margin: 0px; }
-  header .nav {
-    background: black; }
-    header .nav .row {
-      margin: 0px; }
-    header .nav nav {
-      width: 100%; }
-  header .row {
-    position: relative; }
-    header .row > .container {
-      position: relative; }
-    header .row #header_logo {
-      padding-top: 15px; }
-      @media (max-width: 992px) {
-        header .row #header_logo {
-          padding-top: 40px; } }
-      @media (max-width: 767px) {
-        header .row #header_logo {
-          padding-top: 15px; }
-          header .row #header_logo img {
-            margin: 0 auto; } }
-  @media (min-width: 767px) {
-    header .col-sm-4 + .col-sm-4 + .col-sm-4, header .row #header_logo + .col-sm-4 + .col-sm-4, header .row .col-sm-4 + #header_logo + .col-sm-4, header .row #header_logo + #header_logo + .col-sm-4, header .row .col-sm-4 + .col-sm-4 + #header_logo, header .row #header_logo + .col-sm-4 + #header_logo, header .row .col-sm-4 + #header_logo + #header_logo, header .row #header_logo + #header_logo + #header_logo {
-      float: right; } }
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between; }
+  header #header_logo {
+    display: inline-block; }
+    header #header_logo > a {
+      display: inline-block; }
 
 .ie8 #header #header_logo {
   width: 350px; }
@@ -7146,7 +7132,7 @@ div.star a:hover {
   color: #333; }
 
 .header-container {
-  background: #fff; }
+  background: black; }
 
 .breadcrumb {
   display: inline-block;
