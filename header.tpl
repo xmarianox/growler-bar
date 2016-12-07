@@ -97,11 +97,13 @@
 			</div>
 
 			<div class="columns-container">
-				<div id="slider_row" class="row">
-					{capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
-					{if $smarty.capture.displayTopColumn}
-						<div id="top_column" class="center_column col-xs-12 col-sm-12">{$smarty.capture.displayTopColumn}</div>
-					{/if}
+				<div>
+					<div id="slider_row" class="row">
+						{capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
+						{if $smarty.capture.displayTopColumn}
+							<div id="top_column" class="center_column col-xs-12 col-sm-12">{$smarty.capture.displayTopColumn}</div>
+						{/if}
+					</div>
 				</div>
 
 				<div id="columns" class="container">

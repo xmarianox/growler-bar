@@ -6,7 +6,7 @@
 #homepage-slider {
 	padding-left: 0;
 	padding-right: 0;
-	margin-bottom: 14px;
+	// margin-bottom: 14px;
 	max-width: 100%;
 	max-height: 100%;
 	overflow: hidden;
@@ -74,6 +74,27 @@
 	}
 /*****************************************************************************
 						BXSlider Styles
+
+						// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-phone:               $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-tablet:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-desktop:             $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-desktop:          $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;
 ********************************************************************************/
 	.bx-wrapper {
 		a {
@@ -155,6 +176,69 @@
 		.bx-wrapper .bx-controls-direction a {
 			&:before {
 				background: $dark-background;
+			}
+		}
+	}
+}
+
+#homepage-slider-banner {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #e5e5e5;
+	padding: 10px;
+
+	ul {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin: 0 auto;
+		// flex
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include justify-content(stretch);
+		@include align-items(center);
+
+		li {
+			@include flex-basis(33%);
+			overflow: hidden;
+			text-align: left;
+			//flex
+			@include display-flex;
+			@include flex-direction(row);
+			@include flex-wrap(nowrap);
+			@include justify-content(center);
+			@include align-items(center);
+			// responsive
+			@media (min-width: $screen-tablet) {}
+
+			&:nth-child(2) {
+				border-right: 1px solid #aaaaaa;
+				border-left: 1px solid #aaaaaa;
+			}
+
+			i {
+				margin: auto;
+				margin-right: 15px;
+				@media (min-width: $screen-lg-desktop) {
+					margin-right: 30px;
+				}
+			}
+
+			span {
+				font-family: $gothamMedium;
+				font-size: 14px;
+				line-height: 16px;
+				color: #6c6c6c;
+				display: inline-block;
+				margin: auto;
+				margin-left: 0;
+				// responsive
+				@media (min-width: $screen-lg-desktop) {
+					font-size: 16px;
+					line-height: 18px;
+				}
 			}
 		}
 	}

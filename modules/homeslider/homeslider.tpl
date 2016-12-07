@@ -44,12 +44,21 @@
 			</ul>
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div>La mejor variedad de cervezas y merchandising.</div>
-				<div>Comprá en forma rápida, fácil y segura.</div>
-				<div>Envíos a todo el país.</div>
-			</div>
+		<div id="homepage-slider-banner">
+			<ul>
+				<li>
+					<i class="icon-variedad"></i>
+					<span>La mejor variedad de cervezas<br> y merchandising.</span>
+				</li>
+				<li>
+					<i class="icon-mobile"></i>
+					<span>Comprá en forma rápida, fácil y segura.</span>
+				</li>
+				<li>
+					<i class="icon-envios"></i>
+					<span>Envíos a todo el país.</span>
+				</li>
+			</ul>
 		</div>
 	{/if}
 <!-- /Module HomeSlider -->
