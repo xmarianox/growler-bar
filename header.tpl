@@ -88,7 +88,7 @@
 						</a>
 					</div>
 
-					{*{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}*}
+					{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 
 					<nav>{$smarty.capture.displayNav}</nav>
 

@@ -86,24 +86,29 @@ header {
 	background: black;
 	padding: 20px 16px;
 	// flex
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: space-between;
+	@include display-flex;
+	@include flex-direction(row);
+	@include flex-wrap(nowrap);
+	@include align-items(center);
+	@include justify-content(space-between);
 
 	#header_logo {
 		display: inline-block;
+		margin: auto;
+		margin-left: 0px;
 		& > a {
 			display: inline-block;
 		}
 	}
 
 	@media (min-width: $screen-tablet) {
-		padding: 30px 40px;
+		padding: 25px 40px;
 	}
 
 	nav {
+
+		margin: auto;
+		margin-right: 0px;
 		// flex
 		@include display-flex;
 		@include flex-direction(row);
