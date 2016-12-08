@@ -5707,8 +5707,8 @@ td.visible-print {
 
 .icon-growlers {
   background: url(../img/Growlers-logo-desktop.svg) center center no-repeat;
-  width: 230px;
-  height: 27px; }
+  width: 160px;
+  height: 18px; }
   @media (min-width: 1200px) {
     .icon-growlers {
       width: 350px;
@@ -5806,7 +5806,7 @@ header {
   z-index: 1;
   position: relative;
   background: black;
-  padding: 20px 16px;
+  padding: 15px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;

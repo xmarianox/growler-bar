@@ -2,6 +2,10 @@
 @import "theme_variables";
 #search_block_top {
 	//padding-top: 50px;
+	@media (max-width: $screen-xs-max) {
+		display: none;
+	}
+
 	#searchbox {
 		float: left;
 		width: 100%;

@@ -11,11 +11,19 @@
   justify-content: center;
   -webkit-align-items: center;
   align-items: center; }
+  @media (max-width: 767px) {
+    .header_user_info {
+      width: 35px;
+      height: 35px; } }
   .header_user_info a {
     display: inline-block;
     cursor: pointer;
     font-size: 30px;
     line-height: 30px;
     color: white; }
+    @media (max-width: 767px) {
+      .header_user_info a {
+        font-size: 25px;
+        line-height: 25px; } }
 
 /*# sourceMappingURL=blockuserinfo.css.map */

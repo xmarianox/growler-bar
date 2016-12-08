@@ -1,3 +1,6 @@
+@media (max-width: 767px) {
+  #search_block_top {
+    display: none; } }
 #search_block_top #searchbox {
   float: left;
   width: 100%; }
