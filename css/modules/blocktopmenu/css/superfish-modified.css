@@ -49,30 +49,24 @@
         .sf-menu > li span.active:after {
           content: "\f068"; } }
   .sf-menu > li > a {
-    font: 20px/30px "Gotham-Bold";
+    font: 16px/26px "Gotham-Medium";
     text-transform: uppercase;
     color: white;
     display: block;
-    padding: 0px 10px; }
+    padding: 0px 20px; }
   .sf-menu > li.sfHover > a,
   .sf-menu > li > a:hover, .sf-menu > li.sfHoverForce > a {
-    background: #333;
-    border-bottom-color: #666666;
     color: #fff; }
 
 .sf-menu li li li a {
-  display: inline-block;
-  position: relative;
-  color: #777777;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: bold;
-  padding-bottom: 10px; }
-  .sf-menu li li li a:before {
-    content: "\f105";
-    display: inline-block;
-    font-family: "FontAwesome";
-    padding-right: 10px; }
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #b5b5b5;
+  text-transform: uppercase;
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+  line-height: 42px;
+  color: black; }
   .sf-menu li li li a:hover {
     color: #333; }
 
@@ -95,6 +89,7 @@
   display: block !important;
   opacity: 1 !important;
   background: none;
+  padding: 0;
   -moz-box-shadow: transparent 0px 0px 0px;
   -webkit-box-shadow: transparent 0px 0px 0px;
   box-shadow: transparent 0px 0px 0px; }
@@ -126,19 +121,25 @@ ul.sf-menu li li li.sfHover ul {
   top: 0; }
 
 .sf-menu > li > ul {
-  padding: 26px 30px 31px;
-  width: 100%; }
+  padding: 15px 10px;
+  width: 50%;
+  text-align: center; }
   .sf-menu > li > ul > li > a {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #b5b5b5;
     text-transform: uppercase;
-    font: 600 16px/20px "Gotham-Book", sans-serif;
-    color: #333; }
+    font-family: "Gotham-Medium";
+    font-size: 16px;
+    line-height: 42px;
+    color: #ff9b19; }
     .sf-menu > li > ul > li > a:hover {
       color: #515151; }
 
 .sf-menu > li > ul > li {
   float: left;
-  width: 20%;
-  padding-right: 15px; }
+  width: 50%;
+  padding: 0 10px; }
   @media (max-width: 767px) {
     .sf-menu > li > ul > li {
       width: 50%; } }

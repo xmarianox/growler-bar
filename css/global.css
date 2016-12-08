@@ -5711,8 +5711,8 @@ td.visible-print {
   height: 18px; }
   @media (min-width: 1200px) {
     .icon-growlers {
-      width: 350px;
-      height: 41px; } }
+      width: 300px;
+      height: 38px; } }
 
 .icon-envios {
   background: url(../img/icon/ic_envios.svg) center center no-repeat;
