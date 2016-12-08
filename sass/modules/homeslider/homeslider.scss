@@ -1,3 +1,7 @@
+$default-text-shadow-color: rgba(black, 0.8);
+$default-text-shadow-blur: 4px;
+$default-text-shadow-v-offset: 2px;
+
 @import "compass";
 @import "theme_variables";
 /******************************************************************************
@@ -16,7 +20,6 @@
 	@media (max-width: $screen-xs-max) { // max 767px
 		width: 100%;
 		max-width: 100%;
-		padding-top: 20px;
 	}
 	#homeslider {
 		margin: 0 auto;
@@ -32,27 +35,37 @@
 	}
 	.homeslider-description {
 		position: absolute;
+		bottom: 0;
 		left: 0;
-		top: 0;
 		padding: 50px 50px;
 		cursor: pointer;
+
 		h2 {
-			font-size: 2.7em;
+			font-family: $gothamMedium;
+			font-size: 60px;
+			line-height: 62px;
 			color: white;
+			@include single-text-shadow;
 			margin: 0;
 			padding: 0;
 		}
 		p {
 			width: 50%;
-			font-size: 1.15em;
-			line-height: 1.3em;
-			padding: 0.5em 0;
+			font-size: 18px;
+			line-height: 20px;
+			padding: 15px 0;
 			color: white;
 		}
-		button {
-			font-size: 1.2em;
-			text-transform: uppercase;
+		.btn-slider {
+			font-family: $gothamMedium;
+			font-size: 26px;
+			line-height: 60px;
+			color: white;
+			padding: 0 20px;
+			background-color: black;
+			border-color: black;
 		}
+
 		@media (max-width: $screen-lg){
 			padding: 20px;
 			font-size: 0.8em;
