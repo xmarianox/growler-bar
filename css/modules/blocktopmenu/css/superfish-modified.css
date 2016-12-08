@@ -1,9 +1,4 @@
 /*** ESSENTIAL STYLES ***/
-.sf-contener {
-  clear: both;
-  float: left;
-  width: 100%; }
-
 .sf-menu,
 .sf-menu * {
   margin: 0;
@@ -13,9 +8,7 @@
 .sf-menu {
   position: relative;
   padding: 0;
-  width: 100%;
-  border-bottom: 3px solid #e9e9e9;
-  background: #f6f6f6; }
+  width: 100%; }
   @media (max-width: 767px) {
     .sf-menu {
       display: none; } }
@@ -36,9 +29,7 @@
   /* fixes IE7 'sticky bug' */ }
 
 .sf-menu > li {
-  float: left;
-  border-right: 1px solid #d6d4d4;
-  margin-bottom: -3px; }
+  float: left; }
   @media (max-width: 767px) {
     .sf-menu > li {
       float: none;
@@ -58,12 +49,11 @@
         .sf-menu > li span.active:after {
           content: "\f068"; } }
   .sf-menu > li > a {
-    font: 600 18px/22px "Gotham-Book", sans-serif;
+    font: 20px/30px "Gotham-Bold";
     text-transform: uppercase;
-    color: #484848;
+    color: white;
     display: block;
-    padding: 17px 20px;
-    border-bottom: 3px solid #e9e9e9; }
+    padding: 0px 10px; }
   .sf-menu > li.sfHover > a,
   .sf-menu > li > a:hover, .sf-menu > li.sfHoverForce > a {
     background: #333;

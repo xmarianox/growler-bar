@@ -2,9 +2,9 @@
 @import "theme_variables";
 /*** ESSENTIAL STYLES ***/
 .sf-contener {
-	clear: both;
-	float: left;
-	width: 100%;
+	// clear: both;
+	// float: left;
+	// width: 100%;
 }
 .sf-right {}
 .sf-menu,
@@ -17,8 +17,8 @@
 	position: relative;
 	padding: 0;
 	width: 100%;
-	border-bottom: 3px solid #e9e9e9;
-	background: #f6f6f6;
+	//border-bottom: 3px solid #e9e9e9;
+	//background: #f6f6f6;
 	@media (max-width: $screen-xs-max) { // max 767px
 		display: none;
 	}
@@ -39,8 +39,8 @@
 }
 .sf-menu > li {
 	float: left;
-	border-right: 1px solid $base-border-color;
-	margin-bottom: -3px;
+	//border-right: 1px solid $base-border-color;
+	//margin-bottom: -3px;
 	@media (max-width: $screen-xs-max) { // max 767px
 		float: none;
 		position: relative;
@@ -65,12 +65,12 @@
 		}
 	}
 	> a {
-		font: 600 18px/22px $font-custom;
+		font: 20px/30px $gothamBold;
 		text-transform: uppercase;
-		color: #484848;
+		color: white;
 		display: block;
-		padding: 17px 20px;
-		border-bottom: 3px solid #e9e9e9;
+		padding: 0px 10px;
+		//border-bottom: 3px solid #e9e9e9;
 	}
 	&.sfHover > a,
 	> a:hover,

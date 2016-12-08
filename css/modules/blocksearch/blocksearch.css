@@ -28,8 +28,7 @@
   #search_block_top .btn.button-search:hover {
     color: #6f6f6f; }
 #search_block_top #search_query_top {
-  padding: 13px 60px 13px 13px;
-  height: 45px;
+  height: 50px;
   background: #fbfbfb;
   margin-right: 1px; }
 
