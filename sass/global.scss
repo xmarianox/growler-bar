@@ -541,38 +541,39 @@ span.exclusive {
 		}
 	}
 }
-
+//
 .button.ajax_add_to_cart_button {
-	font: 700 17px / 21px $font-family;
+	font-family: $gothamMedium;
+	font-size: 16px;
 	color: $button-text-color;
-	text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
 	padding: 0;
-	border: 1px solid;
-	border-color: #0079b6 #006fa8 #012740 #006fa8;
+	border: 1px solid black;
+	@include border-radius(8px);
+	overflow: hidden;
 	span {
-		border: 1px solid;
-		border-color: #06b2e6;
 		padding: 10px 14px;
 		display: block;
-		background: rgb(0, 154, 208);
-		@include gradient-vertical(rgba(0, 154, 208, 1), rgba(0, 122, 183, 1));
+		background: black;
 	}
 	&:hover {
-		border-color: #01314e #004b74 #0079b6 #004b74;
 		span {
-			filter: none;
-			background: #0084bf;
+			 background: $product-name-color;
 		}
 	}
 }
 
 .button.lnk_view {
-	font: 700 17px / 21px $font-family;
+	font-family: $gothamMedium;
+	font-size: 16px;
+	text-transform: uppercase;
 	color: $base-text-color;
 	text-shadow: 1px 1px rgba(255, 255, 255, 1);
 	padding: 0;
 	border: 1px solid;
 	border-color: #cacaca #b7b7b7 #9a9a9a #b7b7b7;
+	@include border-radius(8px);
+	overflow: hidden;
 	span {
 		border: 1px solid;
 		border-color: $light-border-color;
@@ -673,13 +674,16 @@ table.table_block td {
 
 //product elements
 .product-name {
-	font-size: 17px;
-	line-height: 23px;
+	font-family: $gothamMedium;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 24px;
 	color: $product-name-color;
 	margin-bottom: 0;
 	a {
-		font-size: 17px;
-		line-height: 23px;
+		font-size: 18px;
+		line-height: 24px;
 		color: $product-name-color;
 		&:hover {
 			color: $product-name-hover-color;
@@ -697,8 +701,10 @@ table.table_block td {
 }
 
 .price.product-price {
-	font: 600 21px / 26px $font-custom;
-	color: $product-price-color;
+	font-family: $gothamMedium;
+	font-size: 18px;
+	line-height: 24px;
+	color: $product-name-color;
 }
 
 .old-price {

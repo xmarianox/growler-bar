@@ -212,8 +212,7 @@ ul.product_list.grid {
 			padding: 0;
 			position: relative;
 			.product-image-container {
-				border: 1px solid $base-listing-border-color;
-				padding: 9px;
+				padding: 0;
 				margin-bottom: 13px;
 				position: relative;
 				@media (max-width: $screen-xs-max) { // max 767px
@@ -238,7 +237,7 @@ ul.product_list.grid {
 			}
 			h5 {
 				padding: 0 15px 7px 15px;
-				min-height: 53px;
+				min-height: 56px;
 			}
 			.comments_note {
 				@media (min-width: $screen-lg) { // min 1200px
@@ -371,8 +370,8 @@ ul.product_list.list {
 		}
 		.product-image-container {
 			position: relative;
-			border: 1px solid $base-listing-border-color;
-			padding: 9px;
+			//border: 1px solid $base-listing-border-color;
+			padding: 0px;
 			@media (max-width: $screen-xs - 1) { // max 479px
 				max-width: 290px;
 				margin: 0 auto;
