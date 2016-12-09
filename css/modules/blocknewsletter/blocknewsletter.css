@@ -22,7 +22,8 @@
 #footer #newsletter_block_full {
   width: 100%;
   overflow: hidden;
-  padding: 13px 15px 7px 15px;
+  background-color: white;
+  padding: 30px 0;
   margin-bottom: 0; }
   #footer #newsletter_block_full h4 {
     font-family: "Gotham-Book";
