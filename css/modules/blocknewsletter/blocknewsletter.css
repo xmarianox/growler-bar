@@ -46,7 +46,10 @@
   #footer #newsletter_block_full .block_content {
     overflow: hidden; }
   #footer #newsletter_block_full .form-group {
-    margin-bottom: 0; }
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 380px;
+    overflow: hidden; }
     #footer #newsletter_block_full .form-group .form-control {
       height: 60px;
       max-width: 380px;
@@ -62,7 +65,8 @@
       color: white;
       padding: 0 43px 0 12px;
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      float: left; }
       #footer #newsletter_block_full .form-group .form-control:focus {
         -moz-box-shadow: black 0px 0px 0px;
         -webkit-box-shadow: black 0px 0px 0px;
@@ -73,7 +77,9 @@
       background: none;
       text-align: center;
       color: #908f8f;
-      padding: 8px; }
+      padding: 8px;
+      float: left;
+      margin-top: 8px; }
       #footer #newsletter_block_full .form-group .button-small:before {
         content: "\f138";
         font-family: "FontAwesome";

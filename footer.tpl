@@ -33,6 +33,10 @@
 			{if isset($HOOK_FOOTER)}
 				<footer id="footer">
 					{$HOOK_FOOTER}
+					<div id="growlers-block">
+						<span class="copy">&copy; growlers {'Y'|date}</span>
+						<p>Beber con moderación. Prohibida su venta a menores de 18 años</p>
+					</div>
 				</footer>
 			{/if}
 		</div><!-- #page -->

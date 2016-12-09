@@ -63,7 +63,11 @@
 			overflow: hidden;
 		}
 		.form-group {
+			margin: 0 auto;
 			margin-bottom: 0;
+			max-width: 380px;
+			overflow: hidden;
+
 			.form-control {
 				height: 60px;
 				max-width: 380px;
@@ -78,6 +82,7 @@
 				padding: 0 43px 0 12px;
 				display: block;
 				margin: 0 auto;
+				float: left;
 				&:focus {
 					@include box-shadow(black 0px 0px 0px);
 				}
@@ -89,6 +94,8 @@
 				text-align: center;
 				color: #908f8f;
 				padding: 8px;
+				float: left;
+				margin-top: 8px;
 				&:before {
 					content: "\f138";
 					font-family: $font-icon;

@@ -1783,113 +1783,186 @@ div.star a:hover {
 	overflow: hidden;
 	background-color: #e5e5e5;
 	padding-bottom: 20px;
-}
+	text-align: center;
 
-#social_block {
-	@include size(100%, auto);
-	padding: 30px;
+	#block_various_links_footer {
+		@include size(100%, auto);
+		overflow: hidden;
 
-	h4 {
-		font-family: $gothamMedium;
-		font-weight: bold;
-		font-size: 20px;
-		line-height: 24px;
-		text-align: center;
-		margin-bottom: 26px;
+		h4 {
+			display: none;
+		}
+
+
+		ul {
+			@include size(auto, auto);
+			display: inline-block;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid black;
+			text-align: center;
+
+			li {
+				font-family: $gothamMedium;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 18px;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 0 12px;
+
+				border-left: 3px solid black;
+
+				a {
+					color: black;
+
+					&:hover {
+						color: $base-body-color;
+					}
+				}
+
+				&:first-child {
+					border: none;
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
 	}
 
-	ul {
+	#social_block {
 		@include size(100%, auto);
-		text-align: center;
+		padding: 30px;
 
-		li {
-			@include size(52px, 52px);
-			@include border-radius(50%);
-			background-color: black;
-			display: inline-block;
+		h4 {
+			font-family: $gothamMedium;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 24px;
 			text-align: center;
-			overflow: hidden;
+			margin-bottom: 26px;
+		}
 
-			a {
+		ul {
+			@include size(100%, auto);
+			text-align: center;
+
+			li {
+				@include size(52px, 52px);
+				@include border-radius(50%);
+				background-color: black;
 				display: inline-block;
-				color: white;
-				font-size: 30px;
-				line-height: 41px;
+				text-align: center;
+				overflow: hidden;
 
-				span {
-					display: none;
-				}
-				&:before {
+				a {
 					display: inline-block;
-					font-family: $font-icon;
-					vertical-align: -5px;
-					font-weight: normal;
-					-webkit-font-smoothing: antialiased;
-					-moz-osx-font-smoothing: grayscale;
-				}
-				&:hover {
-					color: #e5e5e5;
-				}
-			}
-			&.facebook {
-				a {
+					color: white;
+					font-size: 30px;
+					line-height: 41px;
+
+					span {
+						display: none;
+					}
 					&:before {
-						content: "\f09a";
+						display: inline-block;
+						font-family: $font-icon;
+						vertical-align: -5px;
+						font-weight: normal;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+					&:hover {
+						color: #e5e5e5;
 					}
 				}
-			}
-			&.twitter {
-				a {
-					&:before {
-						content: "\f099";
+				&.facebook {
+					a {
+						&:before {
+							content: "\f09a";
+						}
 					}
 				}
-			}
-			&.rss {
-				a {
-					&:before {
-						content: "\f09e";
+				&.twitter {
+					a {
+						&:before {
+							content: "\f099";
+						}
 					}
 				}
-			}
-			&.youtube {
-				a {
-					&:before {
-						content: "\f167";
+				&.rss {
+					a {
+						&:before {
+							content: "\f09e";
+						}
 					}
 				}
-			}
-			&.google-plus {
-				a {
-					&:before {
-						content: "\f0d5";
+				&.youtube {
+					a {
+						&:before {
+							content: "\f167";
+						}
 					}
 				}
-			}
-			&.pinterest {
-				a {
-					&:before {
-						content: "\f0d2";
+				&.google-plus {
+					a {
+						&:before {
+							content: "\f0d5";
+						}
 					}
 				}
-			}
-			&.vimeo {
-				a {
-					&:before {
-						content: "\f194";
+				&.pinterest {
+					a {
+						&:before {
+							content: "\f0d2";
+						}
 					}
 				}
-			}
-			&.instagram {
-				a {
-					&:before {
-						content: "\f16d";
+				&.vimeo {
+					a {
+						&:before {
+							content: "\f194";
+						}
+					}
+				}
+				&.instagram {
+					a {
+						&:before {
+							content: "\f16d";
+						}
 					}
 				}
 			}
 		}
 	}
+
+	#growlers-block {
+		@include size(100%, auto);
+		overflow: hidden;
+		text-align: center;
+		font-family: $gothamMedium;
+
+		.copy {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 28px;
+			text-transform: uppercase;
+			color: black;
+		}
+
+		p {
+			color: black;
+			font-size: 12px;
+			line-height: 18px;
+			margin-bottom: 30px;
+		}
+	}
 }
+
+
 
 // .footer-container {
 // 	background-color: white;
@@ -1988,124 +2061,7 @@ div.star a:hover {
 // 		.blockcategories_footer {
 // 			clear: left;
 // 		}
-// 		#social_block {
-// 			float: left;
-// 			width: 50%;
-// 			padding: 22px 15px 0 15px;
-// 			// max 767px
-// 			@media (max-width: $screen-xs-max) {
-// 				width: 100%;
-// 				float: left;
-// 				padding-top: 5px;
-// 			}
-// 			ul {
-// 				float: right;
-// 				@media (max-width: $screen-xs-max) {
-// 					float: none;
-// 				}
-// 				li {
-// 					float: left;
-// 					width: 40px;
-// 					text-align: center;
-// 					// min 768px max 991px
-// 					@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-// 						width: 30px;
-// 					}
-// 					a {
-// 						display: inline-block;
-// 						color: #908f8f;
-// 						font-size: 28px;
-// 						// min 768px max 991px
-// 						@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-// 							font-size: 20px;
-// 						}
-// 						span {
-// 							display: none;
-// 						}
-// 						&:before {
-// 							display: inline-block;
-// 							font-family: $font-icon;
-// 							vertical-align: -5px;
-// 							font-weight: normal;
-// 							-webkit-font-smoothing: antialiased;
-// 							-moz-osx-font-smoothing: grayscale;
-// 						}
-// 						&:hover {
-// 							color: $light-text-color;
-// 						}
-// 					}
-// 					&.facebook {
-// 						a {
-// 							&:before {
-// 								content: "\f09a";
-// 							}
-// 						}
-// 					}
-// 					&.twitter {
-// 						a {
-// 							&:before {
-// 								content: "\f099";
-// 							}
-// 						}
-// 					}
-// 					&.rss {
-// 						a {
-// 							&:before {
-// 								content: "\f09e";
-// 							}
-// 						}
-// 					}
-// 					&.youtube {
-// 						a {
-// 							&:before {
-// 								content: "\f167";
-// 							}
-// 						}
-// 					}
-// 					&.google-plus {
-// 						a {
-// 							&:before {
-// 								content: "\f0d5";
-// 							}
-// 						}
-// 					}
-// 					&.pinterest {
-// 						a {
-// 							&:before {
-// 								content: "\f0d2";
-// 							}
-// 						}
-// 					}
-// 					&.vimeo {
-// 						a {
-// 							&:before {
-// 								content: "\f194";
-// 							}
-// 						}
-// 					}
-// 					&.instagram {
-// 						a {
-// 							&:before {
-// 								content: "\f16d";
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 			h4 {
-// 				float: right;
-// 				margin-bottom: 0;
-// 				font-size: 21px;
-// 				line-height: 25px;
-// 				text-transform: none;
-// 				padding: 0 10px 0 0;
-// 				// max 767px
-// 				@media (max-width: $screen-xs-max) {
-// 					display: none;
-// 					text-align: center;
-// 				}
-// 			}
-// 		}
+
 // 		.bottom-footer {
 // 			position: absolute;
 // 			bottom: -55px;
