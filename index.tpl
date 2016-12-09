@@ -24,7 +24,9 @@
 *}
 {if isset($HOOK_HOME_TAB_CONTENT) && $HOOK_HOME_TAB_CONTENT|trim}
     {if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
+		<h1 class="page-subheading">PRODUCTOS</h1>
         <ul id="home-page-tabs" class="nav nav-tabs clearfix">
+			<li>Ordenar <i class="icon-chevron-right right"></i></li>
 			{$HOOK_HOME_TAB}
 		</ul>
 	{/if}

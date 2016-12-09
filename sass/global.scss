@@ -920,56 +920,52 @@ table.table_block td {
 //Homepage Tabs
 #home-page-tabs {
 	border: none;
+	border-bottom: 1px solid $base-border-color;
 	background: $light-background;
-	// min 768px
-	@media (min-width: $screen-sm) {
-		padding: 10px 0;
-		margin: 0 0 0 -18px;
-	}
+	text-align: center;
+	padding: 20px 0;
+
 	> li {
 		margin-bottom: 0;
+		float: none;
+		display: inline-block;
+		
+		font-family: $gothamMedium;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+
 		// min 768px
 		@media (min-width: $screen-sm-max) {
-			border-left: 1px solid $base-border-color;
-			margin: 0 0px 0 9px;
-			padding: 0 0px 0 9px;
+			border-left: 1px solid #ff9b19;
+			padding: 0px 12px;
 		}
 		// max 479px
 		@media (max-width: $screen-xs - 1) {
 			width: 100%;
 		}
 		a {
-			font: 600 21px / 24px $font-custom;
-			color: $base-heading-color;
-			text-transform: uppercase;
+			color: #6c6c6c;
 			border: none;
 			outline: none;
 			margin: 0;
-			padding: 10px;
-			// min 768px
-			@media (min-width: $screen-sm) {
-				padding: 1px 10px;
-			}
-			@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-				padding: 10px 10px;
-			}
+			padding: 0;
 		}
 		&:first-child {
+			border: none;
+			padding-right: 0;
+			i {
+				margin-left: 10px;
+			}
+		}
+		&:nth-child(2) {
 			border: none;
 		}
 	}
 	> li.active a,
 	>li a:hover {
-		background: $dark-background;
-		color: $light-text-color;
-		padding: 10px;
-		// min 768px
-		@media (min-width: $screen-sm) {
-			margin: -9px 0;
-		}
-		@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-			margin: 0px 0;
-		}
+		color: #ff9b19;
+		background-color: $light-background;
 	}
 }
 
@@ -1143,15 +1139,14 @@ table.table_block td {
 }
 
 .page-subheading {
-	font-family: $font-custom;
-	font-weight: 600;
+	font-family: $gothamBook;
 	text-transform: uppercase;
 	color: $base-heading-color;
-	font-size: 18px;
-	padding: 0 0 15px;
+	font-size: 36px;
 	line-height: normal;
+	text-align: center;
+	padding: 0 0 15px;
 	margin-bottom: 12px;
-	border-bottom: 1px solid $base-border-color;
 }
 
 h3.page-product-heading {
@@ -1784,11 +1779,8 @@ div.star a:hover {
 
 // FOOTER
 .footer-container {
-	background-color: $dark-background;
-	// min 768px
-	@media (min-width: $screen-sm) {
-		background: url(../img/footer-bg.png) repeat-x $dark-background;
-	}
+	background-color: white;
+
 	.container {
 		padding-bottom: 100px;
 	}
@@ -1814,8 +1806,6 @@ div.star a:hover {
 			}
 		}
 		h4 {
-			font: 600 18px / 22px $font-custom;
-			color: $light-text-color;
 			margin: 0 0 13px 0;
 			cursor: pointer;
 			// max 767px

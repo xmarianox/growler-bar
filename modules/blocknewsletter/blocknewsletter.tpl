@@ -23,8 +23,9 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <!-- Block Newsletter module-->
-<div id="newsletter_block_left" class="block">
+<div id="newsletter_block_full">
 	<h4>{l s='Newsletter' mod='blocknewsletter'}</h4>
+	<p>Suscribite a nuestro newsletter<br> para recibir novedades y promociones</p>
 	<div class="block_content">
 		<form action="{$link->getPageLink('index', null, null, null, false, null, true)|escape:'html':'UTF-8'}" method="post">
 			<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >

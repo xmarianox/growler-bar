@@ -6536,50 +6536,42 @@ table.table_block td {
 
 #home-page-tabs {
   border: none;
-  background: #fff; }
-  @media (min-width: 768px) {
-    #home-page-tabs {
-      padding: 10px 0;
-      margin: 0 0 0 -18px; } }
+  border-bottom: 1px solid #d6d4d4;
+  background: #fff;
+  text-align: center;
+  padding: 20px 0; }
   #home-page-tabs > li {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    float: none;
+    display: inline-block;
+    font-family: "Gotham-Medium";
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase; }
     @media (min-width: 991px) {
       #home-page-tabs > li {
-        border-left: 1px solid #d6d4d4;
-        margin: 0 0px 0 9px;
-        padding: 0 0px 0 9px; } }
+        border-left: 1px solid #ff9b19;
+        padding: 0px 12px; } }
     @media (max-width: 479px) {
       #home-page-tabs > li {
         width: 100%; } }
     #home-page-tabs > li a {
-      font: 600 21px/24px "Gotham-Book", sans-serif;
-      color: #555454;
-      text-transform: uppercase;
+      color: #6c6c6c;
       border: none;
       outline: none;
       margin: 0;
-      padding: 10px; }
-      @media (min-width: 768px) {
-        #home-page-tabs > li a {
-          padding: 1px 10px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        #home-page-tabs > li a {
-          padding: 10px 10px; } }
+      padding: 0; }
     #home-page-tabs > li:first-child {
+      border: none;
+      padding-right: 0; }
+      #home-page-tabs > li:first-child i {
+        margin-left: 10px; }
+    #home-page-tabs > li:nth-child(2) {
       border: none; }
   #home-page-tabs > li.active a,
   #home-page-tabs > li a:hover {
-    background: #333;
-    color: #fff;
-    padding: 10px; }
-    @media (min-width: 768px) {
-      #home-page-tabs > li.active a,
-      #home-page-tabs > li a:hover {
-        margin: -9px 0; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      #home-page-tabs > li.active a,
-      #home-page-tabs > li a:hover {
-        margin: 0px 0; } }
+    color: #ff9b19;
+    background-color: #fff; }
 
 .block {
   margin-bottom: 30px; }
@@ -6716,15 +6708,14 @@ table.table_block td {
     margin-bottom: 0; }
 
 .page-subheading {
-  font-family: "Gotham-Book", sans-serif;
-  font-weight: 600;
+  font-family: "Gotham-Book";
   text-transform: uppercase;
   color: #555454;
-  font-size: 18px;
-  padding: 0 0 15px;
+  font-size: 36px;
   line-height: normal;
-  margin-bottom: 12px;
-  border-bottom: 1px solid #d6d4d4; }
+  text-align: center;
+  padding: 0 0 15px;
+  margin-bottom: 12px; }
 
 h3.page-product-heading {
   color: #555454;
@@ -7309,10 +7300,7 @@ div.star a:hover {
     width: 20px; }
 
 .footer-container {
-  background-color: #333; }
-  @media (min-width: 768px) {
-    .footer-container {
-      background: url(../img/footer-bg.png) repeat-x #333; } }
+  background-color: white; }
   .footer-container .container {
     padding-bottom: 100px; }
   .footer-container #footer {
@@ -7331,8 +7319,6 @@ div.star a:hover {
       .footer-container #footer a:hover {
         color: #fff; }
     .footer-container #footer h4 {
-      font: 600 18px/22px "Gotham-Book", sans-serif;
-      color: #fff;
       margin: 0 0 13px 0;
       cursor: pointer; }
       @media (max-width: 767px) {
