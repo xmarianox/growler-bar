@@ -7332,15 +7332,15 @@ div.star a:hover {
       width: auto;
       height: auto;
       display: inline-block;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
       border-bottom: 1px solid black;
       text-align: center; }
       #footer #block_various_links_footer ul li {
         font-family: "Gotham-Medium";
         font-weight: bold;
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 14px;
         display: inline-block;
         text-transform: uppercase;
         padding: 0 12px;
@@ -7354,10 +7354,20 @@ div.star a:hover {
           padding-left: 0; }
         #footer #block_various_links_footer ul li:last-child {
           padding-right: 0; }
+    @media (min-width: 92em) {
+      #footer #block_various_links_footer ul {
+        padding-bottom: 20px;
+        margin-bottom: 20px; }
+        #footer #block_various_links_footer ul li {
+          font-size: 18px;
+          line-height: 18px; } }
   #footer #social_block {
     width: 100%;
     height: auto;
-    padding: 30px; }
+    padding: 15px; }
+    @media (min-width: 92em) {
+      #footer #social_block {
+        padding: 30px; } }
     #footer #social_block h4 {
       font-family: "Gotham-Medium";
       font-weight: bold;
