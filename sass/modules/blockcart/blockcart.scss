@@ -7,12 +7,16 @@
 	position: relative;
 }
 .shopping_cart {
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 
 	@media (max-width: $screen-xs-max) {
 		width: 35px;
 		height: 35px;
+	}
+	@media #{$breakpoint-desktop-medium} {
+		width: 50px;
+		height: 50px;
 	}
 	// @media (max-width: $screen-lg){
 	// 	margin: 0 auto;
@@ -20,8 +24,8 @@
 	// 	width: 100%;
 	// }
 	> a:first-child {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		display: block;
 		color: white;
 		overflow: hidden;
@@ -42,16 +46,21 @@
 			width: 35px;
 			height: 35px;
 		}
+		@media #{$breakpoint-desktop-medium} {
+			width: 50px;
+			height: 50px;
+		}
 
 		.ajax_cart_quantity, .ajax_cart_no_product {
-			width: 20px;
-			height: 20px;
+			width: 16px;
+			height: 16px;
 			display: block;
 			background-color: #ff9b19;
 			@include border-radius(50%);
 			//
+			font-size: 11px;
+			line-height: 16px;
 			text-align: center;
-			line-height: 20px;
 			// position
 			position: absolute;
 			top: 1px;
@@ -62,8 +71,15 @@
 				height: 18px;
 				top: 0;
 				right: 0;
-				font-size: 11px;
 				line-height: 18px;
+			}
+
+			@media #{$breakpoint-desktop-medium} {
+				width: 20px;
+				height: 20px;
+				//
+				font-size: 13px;
+				line-height: 20px;
 			}
 		}
 
@@ -71,14 +87,18 @@
 			content: "\f07a";
 			font-family: $font-icon;
 			display: inline-block;
-			font-size: 30px;
-			line-height: 30px;
+			font-size: 24px;
+			line-height: 24px;
 			color: white;
 			margin: auto;
 			
 			@media (max-width: $screen-xs-max) {
 				font-size: 25px;
 				line-height: 25px;
+			}
+			@media #{$breakpoint-desktop-medium} {
+				font-size: 30px;
+				line-height: 30px;
 			}
 		}
 	}

@@ -17,8 +17,8 @@
       display: none; } }
 
 #contact-link {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -33,16 +33,24 @@
     #contact-link {
       width: 35px;
       height: 35px; } }
+  @media (min-width: 92em) {
+    #contact-link {
+      width: 50px;
+      height: 50px; } }
   #contact-link a {
     display: inline-block;
     color: white;
     cursor: pointer;
-    font-size: 30px;
-    line-height: 30px; }
+    font-size: 24px;
+    line-height: 24px; }
     @media (max-width: 767px) {
       #contact-link a {
         font-size: 25px;
         line-height: 25px; } }
+    @media (min-width: 92em) {
+      #contact-link a {
+        font-size: 30px;
+        line-height: 30px; } }
   @media (max-width: 767px) {
     #contact-link.is_logged {
       display: none; } }

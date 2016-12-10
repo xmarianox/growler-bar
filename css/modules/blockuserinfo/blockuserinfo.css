@@ -1,6 +1,6 @@
 .header_user_info {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -15,15 +15,23 @@
     .header_user_info {
       width: 35px;
       height: 35px; } }
+  @media (min-width: 92em) {
+    .header_user_info {
+      width: 50px;
+      height: 50px; } }
   .header_user_info a {
     display: inline-block;
     cursor: pointer;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 24px;
     color: white; }
     @media (max-width: 767px) {
       .header_user_info a {
         font-size: 25px;
         line-height: 25px; } }
+    @media (min-width: 92em) {
+      .header_user_info a {
+        font-size: 28px;
+        line-height: 28px; } }
 
 /*# sourceMappingURL=blockuserinfo.css.map */

@@ -1,7 +1,6 @@
 @import "compass";
 @import "theme_variables";
 #search_block_top {
-	//padding-top: 50px;
 	@media (max-width: $screen-xs-max) {
 		display: none;
 	}
@@ -11,14 +10,15 @@
 		width: 100%;
 	}
 	.btn.button-search {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		background: black;
 		display: block;
 		position: absolute;
 		top: 0;
 		right: 0;
 		border: none;
+		padding: 0;
 
 		color: $light-text-color;
 		text-align: center;
@@ -30,21 +30,32 @@
 			content: "\f002";
 			display: block;
 			font-family: $font-icon;
-			font-size: 28px;
-			line-height: 28px;
+			font-size: 20px;
+			line-height: 20px;
 			width: 100%;
 			text-align: center;
 		}
 		&:hover {
 			color: #6f6f6f
 		}
+
+		@media #{$breakpoint-desktop-medium} {
+			width: 50px;
+			height: 50px;
+
+			&:before {
+				font-size: 28px;
+				line-height: 28px;
+			}
+		}
 	}
 	#search_query_top {
-		//display: none;
-		//padding: 13px 60px 13px 13px;
-		height: 50px;
+		height: 40px;
 		background: $base-box-bg;
 		margin-right: 1px;
+		@media #{$breakpoint-desktop-medium} {
+			height: 50px;
+		}
 	}
 }
 
