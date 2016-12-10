@@ -47,7 +47,7 @@ textarea {
 
 #columns {
 	position: relative;
-	padding-bottom: 50px;
+	//padding-bottom: 50px;
 	padding-top: 15px;
 }
 
@@ -919,10 +919,12 @@ table.table_block td {
 	@include size(100%, auto);
 	border-top: 1px solid #bfbfbf;
 	border-bottom: 1px solid #bfbfbf;
-	margin: 30px auto;
+	margin: 30px auto 0;
+	padding: 15px 0;
 
 	ul {
 		@include size(100%, auto);
+		margin: 0 auto;
 		// flex
 		@include display-flex;
 		@include flex-direction(row);
@@ -933,6 +935,7 @@ table.table_block td {
 		li {
 			@include flex-basis(calc(100% / 10));
 			margin: 10px auto;
+			text-align: center;
 		}
 	}
 }

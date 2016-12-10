@@ -5887,7 +5887,6 @@ textarea {
 
 #columns {
   position: relative;
-  padding-bottom: 50px;
   padding-top: 15px; }
 
 #index .tab-content {
@@ -6672,10 +6671,12 @@ table.table_block td {
   height: auto;
   border-top: 1px solid #bfbfbf;
   border-bottom: 1px solid #bfbfbf;
-  margin: 30px auto; }
+  margin: 30px auto 0;
+  padding: 15px 0; }
   #home-page-brand-list ul {
     width: 100%;
     height: auto;
+    margin: 0 auto;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -6689,7 +6690,8 @@ table.table_block td {
     #home-page-brand-list ul li {
       -webkit-flex-basis: calc(100% / 10);
       flex-basis: calc(100% / 10);
-      margin: 10px auto; }
+      margin: 10px auto;
+      text-align: center; }
 
 .block {
   margin-bottom: 30px; }
