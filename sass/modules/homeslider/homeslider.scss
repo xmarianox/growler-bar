@@ -42,8 +42,8 @@ $default-text-shadow-v-offset: 2px;
 
 		h2 {
 			font-family: $gothamMedium;
-			font-size: 60px;
-			line-height: 62px;
+			font-size: 45px;
+			line-height: 47px;
 			color: white;
 			@include single-text-shadow;
 			margin: 0;
@@ -58,8 +58,8 @@ $default-text-shadow-v-offset: 2px;
 		}
 		.btn-slider {
 			font-family: $gothamMedium;
-			font-size: 26px;
-			line-height: 60px;
+			font-size: 18px;
+			line-height: 40px;
 			color: white;
 			padding: 0 20px;
 			background-color: black;
@@ -82,6 +82,16 @@ $default-text-shadow-v-offset: 2px;
 			font-size: 0.5em;
 			p {
 				font-size: 1.7em;
+			}
+		}
+		@media #{$breakpoint-desktop-medium} {
+			h2 {
+				font-size: 60px;
+				line-height: 62px;
+			}
+			.btn-slider {
+				font-size: 26px;
+				line-height: 60px;
 			}
 		}
 	}
@@ -246,7 +256,7 @@ $screen-md-max:              ($screen-lg - 1) !default;
 				margin: auto;
 				margin-left: 0;
 				// responsive
-				@media (min-width: $screen-lg-desktop) {
+				@media #{$breakpoint-desktop-medium} {
 					font-size: 16px;
 					line-height: 18px;
 				}

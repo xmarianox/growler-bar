@@ -145,6 +145,9 @@
 						{assign var='free_ship' value=count($cart->getDeliveryAddressesWithoutCarriers(true, $errors))}
 						<div class="cart-prices">
 							<div class="cart-prices-line first-line">
+								<span{if !($page_name == 'order-opc') && $shipping_cost_float == 0 && (!$cart_qties || $cart->isVirtualCart() || !isset($cart->id_address_delivery) || !$cart->id_address_delivery || $free_ship)} class="unvisible"{/if}>
+									{l s='Shipping:' mod='blockcart'}
+								</span>
 								<span class="price cart_block_shipping_cost ajax_cart_shipping_cost{if !($page_name == 'order-opc') && $shipping_cost_float == 0 && (!$cart_qties || $cart->isVirtualCart() || !isset($cart->id_address_delivery) || !$cart->id_address_delivery || $free_ship)} unvisible{/if}">
 									{if $shipping_cost_float == 0}
 										 {if !($page_name == 'order-opc') && (!isset($cart->id_address_delivery) || !$cart->id_address_delivery)}{l s='To be determined' mod='blockcart'}{else}{l s='Free shipping!' mod='blockcart'}{/if}
@@ -152,32 +155,27 @@
 										{$shipping_cost}
 									{/if}
 								</span>
-								<span{if !($page_name == 'order-opc') && $shipping_cost_float == 0 && (!$cart_qties || $cart->isVirtualCart() || !isset($cart->id_address_delivery) || !$cart->id_address_delivery || $free_ship)} class="unvisible"{/if}>
-									{l s='Shipping' mod='blockcart'}
-								</span>
 							</div>
 							{if $show_wrapping}
 								<div class="cart-prices-line">
 									{assign var='cart_flag' value='Cart::ONLY_WRAPPING'|constant}
+									<span>{l s='Wrapping:' mod='blockcart'}</span>
 									<span class="price cart_block_wrapping_cost">
 										{if $priceDisplay == 1}
 											{convertPrice price=$cart->getOrderTotal(false, $cart_flag)}{else}{convertPrice price=$cart->getOrderTotal(true, $cart_flag)}
 										{/if}
 									</span>
-									<span>
-										{l s='Wrapping' mod='blockcart'}
-									</span>
 							   </div>
 							{/if}
 							{if $show_tax && isset($tax_cost)}
 								<div class="cart-prices-line">
+									<span>{l s='Tax:' mod='blockcart'}</span>
 									<span class="price cart_block_tax_cost ajax_cart_tax_cost">{$tax_cost}</span>
-									<span>{l s='Tax' mod='blockcart'}</span>
 								</div>
 							{/if}
 							<div class="cart-prices-line last-line">
+								<span>{l s='Total:' mod='blockcart'}</span>
 								<span class="price cart_block_total ajax_block_cart_total">{$total}</span>
-								<span>{l s='Total' mod='blockcart'}</span>
 							</div>
 							{if $use_taxes && $display_tax_label && $show_tax}
 								<p>
