@@ -57,28 +57,7 @@ textarea {
 		margin-bottom: 34px;
 	}
 }
-/*****************************************************************************
-// Extra small screen / phone
-$screen-xs:                  480px !default;
-$screen-phone:               $screen-xs !default;
 
-// Small screen / tablet
-$screen-sm:                  768px !default;
-$screen-tablet:              $screen-sm !default;
-
-// Medium screen / desktop
-$screen-md:                  992px !default;
-$screen-desktop:             $screen-md !default;
-
-// Large screen / wide desktop
-$screen-lg:                  1200px !default;
-$screen-lg-desktop:          $screen-lg !default;
-
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm - 1) !default;
-$screen-sm-max:              ($screen-md - 1) !default;
-$screen-md-max:              ($screen-lg - 1) !default;
-********************************************************************************/
 header {
 	@include size(100%, auto);
 	z-index: 1;
@@ -935,6 +914,29 @@ table.table_block td {
 		background-color: $light-background;
 	}
 }
+
+#home-page-brand-list {
+	@include size(100%, auto);
+	border-top: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+	margin: 30px auto;
+
+	ul {
+		@include size(100%, auto);
+		// flex
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include align-items(center);
+		@include justify-content(space-between);
+
+		li {
+			@include flex-basis(calc(100% / 10));
+			margin: 10px auto;
+		}
+	}
+}
+
 
 .block {
 	margin-bottom: 30px;

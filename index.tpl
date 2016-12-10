@@ -31,6 +31,32 @@
 		</ul>
 	{/if}
 	<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
+
+	<div id="home-page-brand-list">
+		<ul>
+			<li><i class="icon-schneider"></i></li>
+			<li><i class="icon-heineken"></i></li>
+			<li><i class="icon-budweiser"></i></li>
+			<li><i class="icon-imperial"></i></li>
+			<li><i class="icon-sol"></i></li>
+			<li><i class="icon-amstel"></i></li>
+			<li><i class="icon-palermo"></i></li>
+			<li><i class="icon-bieckert"></i></li>
+			<li><i class="icon-santafe"></i></li>
+			<li><i class="icon-salta"></i></li>
+
+			<li><i class="icon-cordoba"></i></li>
+			<li><i class="icon-kunstmann"></i></li>
+			<li><i class="icon-real"></i></li>
+			<li><i class="icon-lavictoria"></i></li>
+			<li><i class="icon-1888"></i></li>
+			<li><i class="icon-elabuelo"></i></li>
+			<li><i class="icon-lacelia"></i></li>
+			<li><i class="icon-triple"></i></li>
+			<li><i class="icon-mistral"></i></li>
+			<li><i class="icon-redbull"></i></li>
+		</ul>
+	</div>
 {/if}
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
 	<div class="clearfix">{$HOOK_HOME}</div>

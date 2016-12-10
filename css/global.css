@@ -5759,6 +5759,106 @@ td.visible-print {
   .icon-mobile:before, .icon-mobile-phone:before {
     content: ''; }
 
+.icon-1888 {
+  background: url(../img/marcas/1888.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-amstel {
+  background: url(../img/marcas/Amstel.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-bieckert {
+  background: url(../img/marcas/Bieckert.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-budweiser {
+  background: url(../img/marcas/Budweiser.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-cordoba {
+  background: url(../img/marcas/Cordoba.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-elabuelo {
+  background: url(../img/marcas/ElAbuelo.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-heineken {
+  background: url(../img/marcas/Heineken.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-imperial {
+  background: url(../img/marcas/Imperial.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-kunstmann {
+  background: url(../img/marcas/Kunstmann.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-lacelia {
+  background: url(../img/marcas/LaCelia.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-lavictoria {
+  background: url(../img/marcas/LaVictoria.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-mistral {
+  background: url(../img/marcas/Mistral.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-palermo {
+  background: url(../img/marcas/Palermo.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-real {
+  background: url(../img/marcas/Real.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-redbull {
+  background: url(../img/marcas/RedBull.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-salta {
+  background: url(../img/marcas/Salta.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-santafe {
+  background: url(../img/marcas/SantaFe.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-schneider {
+  background: url(../img/marcas/Schneider.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-sol {
+  background: url(../img/marcas/Sol.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
+.icon-triple {
+  background: url(../img/marcas/Triple.svg) center center no-repeat;
+  width: 90px;
+  height: 75px; }
+
 a:hover {
   text-decoration: none; }
 
@@ -5794,28 +5894,6 @@ textarea {
   margin-top: 35px;
   margin-bottom: 34px; }
 
-/*****************************************************************************
-// Extra small screen / phone
-$screen-xs:                  480px !default;
-$screen-phone:               $screen-xs !default;
-
-// Small screen / tablet
-$screen-sm:                  768px !default;
-$screen-tablet:              $screen-sm !default;
-
-// Medium screen / desktop
-$screen-md:                  992px !default;
-$screen-desktop:             $screen-md !default;
-
-// Large screen / wide desktop
-$screen-lg:                  1200px !default;
-$screen-lg-desktop:          $screen-lg !default;
-
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm - 1) !default;
-$screen-sm-max:              ($screen-md - 1) !default;
-$screen-md-max:              ($screen-lg - 1) !default;
-********************************************************************************/
 header {
   width: 100%;
   height: auto;
@@ -6588,6 +6666,30 @@ table.table_block td {
   #home-page-tabs > li a:hover {
     color: #ff9b19;
     background-color: #fff; }
+
+#home-page-brand-list {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  margin: 30px auto; }
+  #home-page-brand-list ul {
+    width: 100%;
+    height: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    #home-page-brand-list ul li {
+      -webkit-flex-basis: calc(100% / 10);
+      flex-basis: calc(100% / 10);
+      margin: 10px auto; }
 
 .block {
   margin-bottom: 30px; }
