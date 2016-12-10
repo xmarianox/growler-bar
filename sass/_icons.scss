@@ -8,17 +8,20 @@
 // custom icons
 .icon-growlers {
 	background: url(../img/Growlers-logo-desktop.svg) center center no-repeat;
-	//@include size(160px, 18px);
 	width: 160px;
 	height: 18px;
 	// width: 230px;
 	// height: 27px;
 	
 	@media (min-width: $screen-lg-desktop) {
-		width: 300px;
-		height: 38px;
+		width: 270px;
+		height: 31px;
 		// width: 350px;
 		// height: 41px;
+	}
+	@media #{$breakpoint-desktop-medium} {
+		width: 300px;
+		height: 38px;
 	}
 }
 

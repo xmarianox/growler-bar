@@ -1,5 +1,16 @@
 @import 'bootstrap_lib/_variables';
 
+// =============================================================================
+// -- BREAKPOINTS
+// =============================================================================
+//desktop
+$breakpoint-desktop-big: '(min-width: 106.250em)';
+$breakpoint-desktop-medium: '(min-width: 92em)';
+// laptop
+$breakpoint-laptop-big: '(min-width: 90em)';
+$breakpoint-laptop-pc: '(min-width: 85em)';
+$breakpoint-laptop-small: '(min-width: 70.000em)';
+
 //------- FONTS
 $gothamLight  : 'Gotham-Light';
 $gothamBook   : 'Gotham-Book';

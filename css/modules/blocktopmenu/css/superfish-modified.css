@@ -49,11 +49,20 @@
         .sf-menu > li span.active:after {
           content: "\f068"; } }
   .sf-menu > li > a {
-    font: 16px/26px "Gotham-Medium";
+    font-family: "Gotham-Medium";
+    font-size: 12px;
+    line-height: 22px;
     text-transform: uppercase;
     color: white;
     display: block;
-    padding: 0px 20px; }
+    padding: 0px 15px; }
+    @media (min-width: 90em) {
+      .sf-menu > li > a {
+        padding: 0px 20px; } }
+    @media (min-width: 92em) {
+      .sf-menu > li > a {
+        font-size: 16px;
+        line-height: 26px; } }
   .sf-menu > li.sfHover > a,
   .sf-menu > li > a:hover, .sf-menu > li.sfHoverForce > a {
     color: #fff; }
@@ -64,16 +73,19 @@
   border-bottom: 1px solid #b5b5b5;
   text-transform: uppercase;
   font-family: "Gotham-Medium";
-  font-size: 14px;
+  font-size: 12px;
   line-height: 42px;
   color: black; }
+  @media (min-width: 92em) {
+    .sf-menu li li li a {
+      font-size: 14px; } }
   .sf-menu li li li a:hover {
     color: #333; }
 
 .sf-menu li ul {
   display: none;
   left: 0;
-  top: 59px;
+  top: 51px;
   /* match top ul list item height */
   z-index: 99;
   padding: 12px 0px 18px 0px;
@@ -83,6 +95,10 @@
   @media (max-width: 767px) {
     .sf-menu li ul {
       top: 0; } }
+  @media (min-width: 92em) {
+    .sf-menu li ul {
+      top: 59px;
+      /* match top ul list item height */ } }
 
 .sf-menu li li ul {
   position: static;
@@ -130,9 +146,12 @@ ul.sf-menu li li li.sfHover ul {
     border-bottom: 1px solid #b5b5b5;
     text-transform: uppercase;
     font-family: "Gotham-Medium";
-    font-size: 16px;
+    font-size: 14px;
     line-height: 42px;
     color: #ff9b19; }
+    @media (min-width: 92em) {
+      .sf-menu > li > ul > li > a {
+        font-size: 16px; } }
     .sf-menu > li > ul > li > a:hover {
       color: #515151; }
 

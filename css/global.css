@@ -5711,6 +5711,10 @@ td.visible-print {
   height: 18px; }
   @media (min-width: 1200px) {
     .icon-growlers {
+      width: 270px;
+      height: 31px; } }
+  @media (min-width: 92em) {
+    .icon-growlers {
       width: 300px;
       height: 38px; } }
 
@@ -5823,7 +5827,7 @@ header {
     margin-left: 0px; }
     header #header_logo > a {
       display: inline-block; }
-  @media (min-width: 768px) {
+  @media (min-width: 92em) {
     header {
       padding: 25px 40px; } }
   header nav {
