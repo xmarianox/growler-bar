@@ -14,11 +14,18 @@
 	list-style: none;
 }
 .sf-menu {
-	position: relative;
 	padding: 0;
-	width: 100%;
+
 	@media (max-width: $screen-xs-max) { // max 767px
 		display: none;
+		width: 100%;
+		padding-bottom: 10px;
+		background-color: black;
+		position: absolute;
+		top: 64px;
+		right: 0;
+		left: 0;
+		z-index: 100;
 	}
 }
 .sf-menu ul {
@@ -31,6 +38,7 @@
 }
 .sf-menu ul li {
 	width: 100%;
+	position: relative;
 }
 .sf-menu li:hover {
 	visibility: inherit; /* fixes IE7 'sticky bug' */
@@ -43,11 +51,13 @@
 		border-right: none;
 		span {
 			position: absolute;
-			right: 6px;
-			top: 20px;
-			width: 30px;
-			height: 30px;
+			top: 8px;
+			right: 16px;
 			z-index: 2;
+			width: 20px;
+			height: 20px;
+			color: white;
+			
 			&:after {
 				font-family: $font-icon;
 				content: "\f067";
@@ -68,6 +78,11 @@
 		color: white;
 		display: block;
 		padding: 0px 15px;
+
+		@media (max-width: $screen-xs-max) { // max 767px
+			font-size: 14px;
+    		line-height: 34px;
+		}
 
 		@media #{$breakpoint-laptop-big} {
 			padding: 0px 20px;
@@ -94,6 +109,10 @@
 	line-height: 42px;
 	color: black;
 
+	@media (max-width: $screen-xs-max) {
+		line-height: 34px;
+	}
+
 	@media #{$breakpoint-desktop-medium} {
 		font-size: 14px;
 	}
@@ -104,17 +123,18 @@
 }
 .sf-menu li ul {
 	display: none;
-	left: 0;
-	top: 51px; /* match top ul list item height */
+	//left: 0;
+	top: 70px; /* match top ul list item height */
 	z-index: 99;
 	padding: 12px 0px 18px 0px;
 	@include box-shadow(rgba(black, 0.20) 0px 5px 13px);
 	@media (max-width: $screen-xs-max) { // max 767px
 		top: 0;
+		left: 0;
 	}
-	@media #{$breakpoint-desktop-medium} {
-		top: 59px; /* match top ul list item height */	
-	}
+	// @media #{$breakpoint-desktop-medium} {
+	// 	top: 59px; /* match top ul list item height */	
+	// }
 }
 .sf-menu li li ul {
 	position: static;
@@ -151,7 +171,15 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu > li > ul {
 	padding: 15px 10px;
 	width: 50%;
+	max-width: 330px;
 	text-align: center;
+
+	@media (max-width: $screen-xs-max) { 
+		width: 100%;
+		max-width: 100%;
+		padding: 0 0 10px;
+	}
+
 	> li {
 		> a {
 			width: 100%;
@@ -163,6 +191,10 @@ ul.sf-menu li li li.sfHover ul {
 			font-size: 14px;
 			line-height: 42px;
 			color: #ff9b19;
+
+			@media (max-width: $screen-xs-max) {
+				line-height: 34px;
+			}
 
 			@media #{$breakpoint-desktop-medium} {
 				font-size: 16px;
@@ -180,10 +212,6 @@ ul.sf-menu li li li.sfHover ul {
 	padding: 0 10px;
 	@media (max-width: $screen-xs-max) { // max 767px
 		width: 50%;
-	}
-	@media (max-width: $screen-xs - 1) { // max 479px
-		width: 100%;
-		padding-bottom: 20px;
 	}
 	@media (min-width: $screen-sm) { // min 768px
 		&.first-in-line-lg {
@@ -221,35 +249,12 @@ ul.sf-menu li li li.sfHover ul {
 		}
 	}
 }
+
 .cat-title {
 	display: none;
 	@media (max-width: $screen-xs-max) { // max 767px
 		display: block;
-		font: 600 18px/22px $font-custom;
-		text-transform: uppercase;
-		color: #484848;
-		display: block;
-		padding: 17px 20px;
-		border-bottom: 3px solid #e9e9e9;
-		background: #f6f6f6;
 		position: relative;
-		&:hover {
-			background: $dark-background;
-			border-bottom-color: #666666;
-			color: $light-text-color;
-		}
-		&:after {
-			display: block;
-			font-family: $font-icon;
-			content: "\f067";
-			position: absolute;
-			right: 15px;
-			top: 18px;
-			font-size: 26px;
-		}
-		&.active:after{
-			content: "\f068";
-		}
 	}
 }
 
@@ -286,4 +291,83 @@ ul.sf-menu li li li.sfHover ul {
 	li.category-thumbnail {
 		padding-right: 0;
 	}
+}
+
+// =============================================================================
+// -- Hamburguer Button
+// =============================================================================
+@mixin line {
+  display: inline-block;
+  width: 36px;
+  height: 5px;
+  vertical-align: middle;
+  background: #ff9b19;
+  transition: $button-transition;
+  @media #{$breakpoint-smartphone-medium} {
+	  width: 42px;
+  }
+}
+
+.btn_lines {
+  background: transparent;
+  border: none;
+  height: 26px;
+  padding: 0;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  border-radius: $button-size/7;
+  /* */
+  &:hover {
+    opacity: 1;
+  }
+  &:active {
+    transition: 0;
+  }
+  &.active {
+    -webkit-transform: scale3d(.8,.8,.8);
+        transform: scale3d(.8,.8,.8);
+  }
+
+  //three-lines to x
+  &.x.active {
+    .lines {
+      background: transparent;
+      &:before, &:after{
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        top:0;
+        width: $button-size;
+      }
+      &:before{
+        -webkit-transform: rotate3d(0,0,1,45deg);
+                transform: rotate3d(0,0,1,45deg);
+      }
+      &:after{
+        -webkit-transform: rotate3d(0,0,1,-45deg);
+                transform: rotate3d(0,0,1,-45deg);
+      }
+    }
+  }
+}
+
+//common to all three-liners
+.lines {
+  @include line;
+  position: relative;
+
+  &:before, &:after {
+   @include line;
+    position: absolute;
+    left:0;
+    content: '';
+    -webkit-transform-origin: $button-size/14 center;
+            transform-origin: $button-size/14 center;
+  }
+  &:before {
+    top: $button-size/4;
+  }
+  &:after {
+    top: -$button-size/4;
+  }
 }

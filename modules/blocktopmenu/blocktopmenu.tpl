@@ -1,9 +1,13 @@
 {if $MENU != ''}
 	<!-- Menu -->
-	{*clearfix col-lg-12*}
+
 	<div id="block_top_menu" class="sf-contener ">
-		<div class="cat-title">{l s="Menu" mod="blocktopmenu"}</div>
-		<ul class="sf-menu clearfix menu-content">
+		{*<div class="cat-title">{l s="Menu" mod="blocktopmenu"}</div>*}
+		<button class="btn_lines x cat-title" type="button" role="button">
+      		<span class="lines"></span>
+    	</button>
+
+		<ul class="sf-menu menu-content">
 			{$MENU}
 			{if $MENU_SEARCH}
 				<li class="sf-search noBack" style="float:right">

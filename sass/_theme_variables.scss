@@ -10,6 +10,13 @@ $breakpoint-desktop-medium: '(min-width: 92em)';
 $breakpoint-laptop-big: '(min-width: 90em)';
 $breakpoint-laptop-pc: '(min-width: 85em)';
 $breakpoint-laptop-small: '(min-width: 70.000em)';
+// tablet
+$breakpoint-tablet-land:'(min-width: 63.938em)';
+$breakpoint-tablet-port:'(min-width: 47em)';
+// mobile
+$breakpoint-smartphone-big: '(min-width: 25.000em)';
+$breakpoint-smartphone-medium: '(min-width: 23.375em)';
+$breakpoint-smartphone-small: '(max-width: 20.000em)';
 
 //------- FONTS
 $gothamLight  : 'Gotham-Light';
@@ -66,6 +73,8 @@ $product-old-price-color:			#6f6f6f;
 
 //---------- Buttons
 $button-text-color:					$light-text-color;
+$button-size: 42px;
+$button-transition: .3s;
 
 		//------ Buttons +/- ---
 		$button-pm-color:			#c0c0c0;
@@ -105,8 +114,8 @@ $tr-even-bg:										#fdfdfd;
 @mixin sub-heading {
 	color: $base-heading-color;
 	text-transform: uppercase;
-	font-family: $font-custom;
-	font-weight: 600;
+	font-family: $gothamLight;
+	font-weight: 300;
 	font-size: 18px;
 	line-height: 20px;
 	padding: 14px 20px 17px;

@@ -63,13 +63,20 @@ header {
 	z-index: 1;
 	position: relative;
 	background: black;
-	padding: 15px;
+	padding: 15px 8px;
 	// flex
 	@include display-flex;
 	@include flex-direction(row);
 	@include flex-wrap(nowrap);
 	@include align-items(center);
 	@include justify-content(space-between);
+
+	@media #{$breakpoint-smartphone-medium} {
+		padding: 15px;
+	}
+	@media #{$breakpoint-desktop-medium} {
+		padding: 25px 40px;
+	}
 
 	#header_logo {
 		display: inline-block;
@@ -80,20 +87,23 @@ header {
 		}
 	}
 
-	//@media #{$breakpoint-laptop-small} {}
-	@media #{$breakpoint-desktop-medium} {
-		padding: 25px 40px;
-	}
-
 	nav {
 		margin: auto;
-		margin-right: 0px;
+		margin-right: 3px;
 		// flex
 		@include display-flex;
 		@include flex-direction(row);
 		@include flex-wrap(wrap);
 		@include align-items(stretch);
 		@include justify-content(center);
+
+		@media #{$breakpoint-smartphone-medium} {
+			margin-right: 6px;
+		}
+
+		@media #{$breakpoint-tablet-port} {
+			margin-right: 0px;
+		}
 	}
 }
 
