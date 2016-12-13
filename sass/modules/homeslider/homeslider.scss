@@ -7,6 +7,15 @@ $default-text-shadow-v-offset: 2px;
 /******************************************************************************
 						Home Page Slider
 *******************************************************************************/
+#slider_row {
+	margin: 0;
+	overflow: hidden;
+
+	#top_column {
+		padding: 0;
+	}
+}
+
 #homepage-slider {
 	padding-left: 0;
 	padding-right: 0;

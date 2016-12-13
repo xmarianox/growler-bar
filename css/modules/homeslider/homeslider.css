@@ -1,6 +1,12 @@
 /******************************************************************************
 						Home Page Slider
 *******************************************************************************/
+#slider_row {
+  margin: 0;
+  overflow: hidden; }
+  #slider_row #top_column {
+    padding: 0; }
+
 #homepage-slider {
   padding-left: 0;
   padding-right: 0;
