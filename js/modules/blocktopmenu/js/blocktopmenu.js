@@ -35,20 +35,18 @@ $(document).ready(function(){
 });
 
 // check resolution
-function responsiveMenu()
-{
-    if ($(window).width() <= 767 && responsiveflagMenu == false) {
+function responsiveMenu() {
+    if ($(window).width() <= 768 && responsiveflagMenu == false) {
         menuChange('enable');
         responsiveflagMenu = true;
-    } else if ($(window).width() >= 768) {
+    } else if ($(window).width() >= 769) {
         menuChange('disable');
         responsiveflagMenu = false;
     }
 }
 
 // init Super Fish Menu for 767px+ resolution
-function desktopInit()
-{
+function desktopInit() {
 	mCategoryGrover.off();
 	mCategoryGrover.removeClass('active');
 	$('.sf-menu > li > ul').removeClass('menu-mobile').parent().find('.menu-mobile-grover').remove();
@@ -72,8 +70,7 @@ function desktopInit()
     });
 }
 
-function mobileInit()
-{
+function mobileInit() {
 
 	categoryMenu.superfish('destroy');
 	$('.sf-menu').removeAttr('style');
@@ -125,7 +122,6 @@ function mobileInit()
 }
 
 // change the menu display at different resolutions
-function menuChange(status)
-{
+function menuChange(status) {
 	status == 'enable' ? mobileInit(): desktopInit();
 }

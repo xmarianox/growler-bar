@@ -1,7 +1,7 @@
 @import "compass";
 @import "theme_variables";
 #block_top_menu {
-	@media (max-width: $screen-xs-max) {
+	@media (max-width: $screen-xs-max + 2) {
 		order: 3;
 	}
 }

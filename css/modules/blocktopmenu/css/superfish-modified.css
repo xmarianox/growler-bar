@@ -7,7 +7,7 @@
 
 .sf-menu {
   padding: 0; }
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     .sf-menu {
       display: none;
       width: 100%;
@@ -23,7 +23,7 @@
   position: absolute;
   top: -999em;
   background: #fff; }
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     .sf-menu ul {
       position: relative; } }
 
@@ -37,7 +37,7 @@
 
 .sf-menu > li {
   float: left; }
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     .sf-menu > li {
       float: none;
       position: relative;
@@ -152,8 +152,9 @@ ul.sf-menu li li li.sfHover ul {
   width: 50%;
   max-width: 330px;
   text-align: center; }
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     .sf-menu > li > ul {
+      top: 0;
       width: 100%;
       max-width: 100%;
       padding: 0 0 10px; } }
@@ -213,7 +214,7 @@ ul.sf-menu li li li.sfHover ul {
 
 .cat-title {
   display: none; }
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     .cat-title {
       display: block;
       position: relative; } }

@@ -16,7 +16,7 @@
 .sf-menu {
 	padding: 0;
 
-	@media (max-width: $screen-xs-max) { // max 767px
+	@media (max-width: $screen-xs-max + 2) { // max 767px
 		display: none;
 		width: 100%;
 		padding-bottom: 10px;
@@ -32,7 +32,7 @@
 	position: absolute;
 	top: -999em;
 	background: $light-background;
-	@media (max-width: $screen-xs-max) { // max 767px
+	@media (max-width: $screen-xs-max + 2) { // max 767px
 		position: relative;
 	}
 }
@@ -45,7 +45,7 @@
 }
 .sf-menu > li {
 	float: left;
-	@media (max-width: $screen-xs-max) { // max 767px
+	@media (max-width: $screen-xs-max + 2) { // max 767px
 		float: none;
 		position: relative;
 		border-right: none;
@@ -174,7 +174,8 @@ ul.sf-menu li li li.sfHover ul {
 	max-width: 330px;
 	text-align: center;
 
-	@media (max-width: $screen-xs-max) { 
+	@media (max-width: $screen-xs-max + 2) {
+		top: 0;
 		width: 100%;
 		max-width: 100%;
 		padding: 0 0 10px;
@@ -252,7 +253,7 @@ ul.sf-menu li li li.sfHover ul {
 
 .cat-title {
 	display: none;
-	@media (max-width: $screen-xs-max) { // max 767px
+	@media (max-width: $screen-xs-max + 2) { // max 767px
 		display: block;
 		position: relative;
 	}

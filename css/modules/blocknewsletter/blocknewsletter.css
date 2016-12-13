@@ -23,19 +23,22 @@
   width: 100%;
   overflow: hidden;
   background-color: white;
-  padding: 30px 0;
+  padding: 30px 16px;
   margin-bottom: 0; }
   #footer #newsletter_block_full h4 {
     font-family: "Gotham-Light";
     text-transform: uppercase;
     color: #555454;
-    font-size: 36px;
+    font-size: 30px;
     line-height: normal;
     text-align: center;
     border: none;
     background: none; }
     #footer #newsletter_block_full h4:after {
       display: none; }
+    @media (min-width: 47em) {
+      #footer #newsletter_block_full h4 {
+        font-size: 36px; } }
   #footer #newsletter_block_full p {
     font-family: "Gotham-Book";
     font-size: 22px;
@@ -43,6 +46,10 @@
     color: black;
     text-align: center;
     margin: 0 auto 30px; }
+    @media (min-width: 47em) {
+      #footer #newsletter_block_full p {
+        font-size: 16px;
+        line-height: 26px; } }
   #footer #newsletter_block_full .block_content {
     overflow: hidden; }
   #footer #newsletter_block_full .form-group {
