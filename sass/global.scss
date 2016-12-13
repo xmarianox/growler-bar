@@ -1121,7 +1121,7 @@ table.table_block td {
 }
 
 .page-subheading {
-	font-family: $gothamBook;
+	font-family: $gothamLight;
 	text-transform: uppercase;
 	color: $base-heading-color;
 	font-size: 36px;
@@ -1958,119 +1958,6 @@ div.star a:hover {
 		}
 	}
 }
-
-
-
-// .footer-container {
-// 	background-color: white;
-
-// 	.container {
-// 		padding-bottom: 100px;
-// 	}
-// 	#footer {
-// 		color: #777777;
-// 		.row {
-// 			position: relative;
-// 		}
-// 		ul.row{
-// 			position: static;
-// 		}
-// 		.footer-block {
-// 			margin-top: 45px;
-// 			// max 767px
-// 			@media (max-width: $screen-xs-max) {
-// 				margin-top: 20px;
-// 			}
-// 		}
-// 		a {
-// 			color: #777777;
-// 			&:hover {
-// 				color: $light-text-color;
-// 			}
-// 		}
-// 		h4 {
-// 			margin: 0 0 13px 0;
-// 			cursor: pointer;
-// 			// max 767px
-// 			@media (max-width: $screen-xs-max) {
-// 				position: relative;
-// 				margin-bottom: 0;
-// 				padding-bottom: 13px;
-// 				&:after {
-// 					display: block;
-// 					content: "\f055";
-// 					font-family: $font-icon;
-// 					position: absolute;
-// 					right: 0;
-// 					top: 1px;
-// 				}
-// 				&.active:after {
-// 					content: "\f056";
-// 				}
-// 			}
-// 			a {
-// 				color: $light-text-color;
-// 			}
-// 		}
-// 		ul {
-// 			li {
-// 				padding-bottom: 8px;
-// 				a {
-// 					font-weight: bold;
-// 					text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
-// 				}
-// 			}
-// 		}
-// 		#block_contact_infos {
-// 			border-left: 1px solid #515151;
-// 			// max 767px
-// 			@media (max-width: $screen-xs-max) {
-// 				border: none;
-// 			}
-// 			> div {
-// 				padding: 0 0 0 5px;
-// 				// max 767px
-// 				@media (max-width: $screen-xs-max) {
-// 					padding-left: 0;
-// 				}
-// 				ul {
-// 					li {
-// 						padding: 0 0 7px 4px;
-// 						overflow: hidden;
-// 						line-height: 30px;
-// 						> span,
-// 						> span a {
-// 							color: $light-text-color;
-// 							font-weight: normal;
-// 						}
-// 						i {
-// 							font-size: 25px;
-// 							width: 32px;
-// 							text-align: center;
-// 							padding-right: 12px;
-// 							float: left;
-// 							color: #908f8f;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 		.blockcategories_footer {
-// 			clear: left;
-// 		}
-
-// 		.bottom-footer {
-// 			position: absolute;
-// 			bottom: -55px;
-// 			left: 0;
-// 			div {
-// 				padding: 15px 0 0 0;
-// 				border-top: 1px solid #515151;
-// 				width: 100%;
-// 			}
-// 		}
-// 	}
-// }
 
 #reinsurance_block {
 	clear: both !important;

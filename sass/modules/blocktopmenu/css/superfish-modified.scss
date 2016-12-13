@@ -71,7 +71,7 @@
 		}
 	}
 	> a {
-		font-family: $gothamMedium;
+		font-family: $gothamBold;
 		font-size: 12px;
 		line-height: 22px;
 		text-transform: uppercase;
@@ -104,7 +104,7 @@
 	display: block;
 	border-bottom: 1px solid #b5b5b5;
 	text-transform: uppercase;
-	font-family: $gothamMedium;
+	font-family: $gothamBold;
 	font-size: 12px;
 	line-height: 42px;
 	color: black;
@@ -169,7 +169,7 @@ ul.sf-menu li li li.sfHover ul {
 	top: 0;
 }
 .sf-menu > li > ul {
-	padding: 15px 10px;
+	padding: 0 10px;
 	width: 50%;
 	max-width: 330px;
 	text-align: center;
@@ -187,7 +187,7 @@ ul.sf-menu li li li.sfHover ul {
 			border-bottom: 1px solid #b5b5b5;
 
 			text-transform: uppercase;
-			font-family: $gothamMedium;
+			font-family: $gothamBold;
 			font-size: 14px;
 			line-height: 42px;
 			color: #ff9b19;
