@@ -5767,6 +5767,40 @@ td.visible-print {
   .icon-mobile:before, .icon-mobile-phone:before {
     content: ''; }
 
+/**
+.icon-bieckert {
+	background: url(../img/marcas/Bieckert.svg) center center no-repeat;
+	width: 90px;
+	height: 75px
+}
+
+.icon-cordoba {
+	background: url(../img/marcas/Cordoba.svg) center center no-repeat;
+	width: 90px;
+	height: 75px
+}
+
+.icon-lavictoria {
+	background: url(../img/marcas/LaVictoria.svg) center center no-repeat;
+	width: 90px;
+	height: 75px
+}
+.icon-palermo {
+	background: url(../img/marcas/Palermo.svg) center center no-repeat;
+	width: 90px;
+	height: 75px
+}
+.icon-salta {
+	background: url(../img/marcas/Salta.svg) center center no-repeat;
+	width: 90px;
+	height: 75px
+}
+.icon-santafe {
+	background: url(../img/marcas/SantaFe.svg) center center no-repeat;
+	width: 90px;
+	height: 75px
+}
+*/
 .icon-1888 {
   background: url(../img/marcas/1888.svg) center center no-repeat;
   width: 90px;
@@ -5777,18 +5811,8 @@ td.visible-print {
   width: 90px;
   height: 75px; }
 
-.icon-bieckert {
-  background: url(../img/marcas/Bieckert.svg) center center no-repeat;
-  width: 90px;
-  height: 75px; }
-
 .icon-budweiser {
   background: url(../img/marcas/Budweiser.svg) center center no-repeat;
-  width: 90px;
-  height: 75px; }
-
-.icon-cordoba {
-  background: url(../img/marcas/Cordoba.svg) center center no-repeat;
   width: 90px;
   height: 75px; }
 
@@ -5817,18 +5841,8 @@ td.visible-print {
   width: 90px;
   height: 75px; }
 
-.icon-lavictoria {
-  background: url(../img/marcas/LaVictoria.svg) center center no-repeat;
-  width: 90px;
-  height: 75px; }
-
 .icon-mistral {
   background: url(../img/marcas/Mistral.svg) center center no-repeat;
-  width: 90px;
-  height: 75px; }
-
-.icon-palermo {
-  background: url(../img/marcas/Palermo.svg) center center no-repeat;
   width: 90px;
   height: 75px; }
 
@@ -5839,16 +5853,6 @@ td.visible-print {
 
 .icon-redbull {
   background: url(../img/marcas/RedBull.svg) center center no-repeat;
-  width: 90px;
-  height: 75px; }
-
-.icon-salta {
-  background: url(../img/marcas/Salta.svg) center center no-repeat;
-  width: 90px;
-  height: 75px; }
-
-.icon-santafe {
-  background: url(../img/marcas/SantaFe.svg) center center no-repeat;
   width: 90px;
   height: 75px; }
 
@@ -6705,8 +6709,8 @@ table.table_block td {
     -webkit-justify-content: space-between;
     justify-content: space-between; }
     #home-page-brand-list ul li {
-      -webkit-flex-basis: calc(100% / 10);
-      flex-basis: calc(100% / 10);
+      -webkit-flex-basis: calc(100% / 7);
+      flex-basis: calc(100% / 7);
       margin: 10px auto;
       text-align: center; }
 
