@@ -5857,7 +5857,8 @@ td.visible-print {
   height: 75px; }
 
 .icon-schneider {
-  background: url(../img/marcas/Schneider.svg) center center no-repeat;
+  background: url(../img/marcas/Schneider.png) center center no-repeat;
+  background-size: contain;
   width: 90px;
   height: 75px; }
 
@@ -6709,10 +6710,18 @@ table.table_block td {
     -webkit-justify-content: space-between;
     justify-content: space-between; }
     #home-page-brand-list ul li {
-      -webkit-flex-basis: calc(100% / 7);
-      flex-basis: calc(100% / 7);
+      -webkit-flex-basis: calc(100% / 2);
+      flex-basis: calc(100% / 2);
       margin: 10px auto;
       text-align: center; }
+      @media (min-width: 47em) {
+        #home-page-brand-list ul li {
+          -webkit-flex-basis: calc(100% / 3);
+          flex-basis: calc(100% / 3); } }
+      @media (min-width: 63.938em) {
+        #home-page-brand-list ul li {
+          -webkit-flex-basis: calc(100% / 7);
+          flex-basis: calc(100% / 7); } }
 
 .block {
   margin-bottom: 30px; }

@@ -943,9 +943,16 @@ table.table_block td {
 		@include justify-content(space-between);
 
 		li {
-			@include flex-basis(calc(100% / 7));
+			@include flex-basis(calc(100% / 2));
 			margin: 10px auto;
 			text-align: center;
+
+			@media #{$breakpoint-tablet-port} {
+				@include flex-basis(calc(100% / 3));
+			}
+			@media #{$breakpoint-tablet-land} {
+				@include flex-basis(calc(100% / 7));
+			}
 		}
 	}
 }
