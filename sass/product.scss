@@ -7,8 +7,8 @@
 	margin-bottom: 40px;
 }
 .top-hr{
-	background: $top-line-color;
-	height: 5px;
+	background: black;
+	height: 3px;
 	margin: 2px 0 31px;
 }
 .product-heading-h5{
@@ -437,9 +437,14 @@ span.view_scroll_spacer {
 #page .rte {
 	padding: 0 20px 20px;
 	word-wrap: break-word;
-	p{
+	font-family: $font-custom;
+	p {
 		margin-bottom: 1em;
 		min-height: 1px
+	}
+
+	strong {
+		font-family: $gothamBold;
 	}
 }
 #attributes{
@@ -514,8 +519,8 @@ span.view_scroll_spacer {
 }
 #short_description_content,
 .page-product-box .rte {
-	a{
-		color: #333333;
+	a {
+		color: black;
 		text-decoration: underline;
 	}
 	a.btn{

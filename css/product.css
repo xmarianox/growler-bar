@@ -4,8 +4,8 @@
   margin-bottom: 40px; }
 
 .top-hr {
-  background: #C4C4C4;
-  height: 5px;
+  background: black;
+  height: 3px;
   margin: 2px 0 31px; }
 
 .product-heading-h5 {
@@ -373,10 +373,13 @@ span.view_scroll_spacer {
 
 #page .rte {
   padding: 0 20px 20px;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  font-family: "Gotham-Book", sans-serif; }
   #page .rte p {
     margin-bottom: 1em;
     min-height: 1px; }
+  #page .rte strong {
+    font-family: "Gotham-Bold"; }
 
 #attributes fieldset {
   padding-bottom: 3px; }
@@ -435,7 +438,7 @@ span.view_scroll_spacer {
 
 #short_description_content a,
 .page-product-box .rte a {
-  color: #333333;
+  color: black;
   text-decoration: underline; }
 #short_description_content a.btn,
 .page-product-box .rte a.btn {

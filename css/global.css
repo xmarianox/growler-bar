@@ -5965,7 +5965,7 @@ header {
   width: 350px; }
 
 #center_column .page_product_box h3 {
-  color: #555454;
+  color: black;
   text-transform: uppercase;
   font-family: "Gotham-Light";
   font-weight: 300;
@@ -5974,9 +5974,7 @@ header {
   padding: 14px 20px 17px;
   margin: 0 0 20px;
   position: relative;
-  border: 1px solid #d6d4d4;
-  border-bottom: none;
-  background: #fbfbfb; }
+  border-bottom: 1px solid black; }
 
 p.info-title {
   font-weight: bold;
@@ -6874,7 +6872,7 @@ table.table_block td {
   margin-bottom: 12px; }
 
 h3.page-product-heading {
-  color: #555454;
+  color: black;
   text-transform: uppercase;
   font-family: "Gotham-Light";
   font-weight: 300;
@@ -6883,9 +6881,8 @@ h3.page-product-heading {
   padding: 14px 20px 17px;
   margin: 0 0 20px;
   position: relative;
-  border: 1px solid #d6d4d4;
-  border-bottom: none;
-  background: #fbfbfb; }
+  border-bottom: 1px solid black;
+  font-size: 22px; }
 
 ul.footer_links {
   padding: 20px 0 0px 0;

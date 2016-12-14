@@ -112,7 +112,7 @@ $tr-even-bg:										#fdfdfd;
 
 //sub heading (h2,h3) define
 @mixin sub-heading {
-	color: $base-heading-color;
+	color: black;
 	text-transform: uppercase;
 	font-family: $gothamLight;
 	font-weight: 300;
@@ -121,7 +121,5 @@ $tr-even-bg:										#fdfdfd;
 	padding: 14px 20px 17px;
 	margin: 0 0 20px;
 	position: relative;
-	border: 1px solid $base-border-color;
-	border-bottom: none;
-	background: $base-box-bg;
+	border-bottom: 1px solid black;
 }
