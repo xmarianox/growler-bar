@@ -394,6 +394,8 @@
 						</div>
 						{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
 					</div> <!-- end box-cart-bottom -->
+
+					<i class="icon-plus-18"></i>
 				</div> <!-- end box-info-product -->
 			</form>
 			{/if}
