@@ -5902,7 +5902,11 @@ textarea {
   z-index: 5003; }
 
 .columns-container {
-  background: #fff; }
+  background: #fff;
+  margin-top: 65px; }
+  @media (min-width: 47em) {
+    .columns-container {
+      margin-top: 70px; } }
 
 #columns {
   position: relative;
@@ -5910,15 +5914,19 @@ textarea {
 
 #index .tab-content {
   margin-top: 35px;
-  margin-bottom: 34px; }
+  margin-bottom: 34px;
+  padding-bottom: 15px; }
 
 header {
   width: 100%;
   height: auto;
-  z-index: 1;
-  position: relative;
   background: black;
   padding: 15px 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;

@@ -43,6 +43,11 @@ textarea {
 
 .columns-container {
 	background: $light-background;
+	margin-top: 65px;
+
+	@media #{$breakpoint-tablet-port} {
+		margin-top: 70px;
+	}
 }
 
 #columns {
@@ -55,15 +60,20 @@ textarea {
 	.tab-content {
 		margin-top: 35px;
 		margin-bottom: 34px;
+		padding-bottom: 15px;
 	}
 }
 
 header {
 	@include size(100%, auto);
-	z-index: 1;
-	position: relative;
 	background: black;
 	padding: 15px 8px;
+	//position
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
 	// flex
 	@include display-flex;
 	@include flex-direction(row);
