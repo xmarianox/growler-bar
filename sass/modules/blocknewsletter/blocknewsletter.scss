@@ -78,14 +78,14 @@
 			overflow: hidden;
 
 			.form-control {
-				height: 60px;
+				height: 50px;
 				max-width: 380px;
 				background: black;
 				border-color: black;
 				@include border-radius(10px);
 				font-family: $gothamMedium;
-				font-size: 18px;
-				line-height: 58px;
+				font-size: 13px;
+				line-height: 48px;
 				text-align: center;
 				color: white;
 				padding: 0 43px 0 12px;
@@ -104,7 +104,7 @@
 				color: #908f8f;
 				padding: 8px;
 				float: left;
-				margin-top: 8px;
+				margin-top: 3px;
 				&:before {
 					content: "\f138";
 					font-family: $font-icon;
