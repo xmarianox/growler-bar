@@ -718,6 +718,7 @@ table.table_block td {
 .label-success {
 	background:#ff9b19;
 	border: 1px solid #ff9b19;
+	@include border-radius(6px);
 }
 
 .new-label {

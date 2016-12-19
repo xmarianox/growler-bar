@@ -6236,7 +6236,7 @@ span.exclusive {
     background: black;
     border-color: black; }
     .button.button-medium.exclusive:hover span {
-      border-color: #black; }
+      border-color: black; }
 
 .link-button {
   font-weight: bold; }
@@ -6492,7 +6492,10 @@ table.table_block td {
 
 .label-success {
   background: #ff9b19;
-  border: 1px solid #ff9b19; }
+  border: 1px solid #ff9b19;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
 
 .new-label {
   font: 700 14px/12px Arial, Helvetica, sans-serif;
