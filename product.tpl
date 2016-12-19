@@ -254,7 +254,51 @@
 					<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
 				</p>
 				<div class="box-info-product">
-					<div class="content_prices clearfix">
+					<div class="content_title_prices">
+						<h3>Seleccione la cantidad:</h3>
+					</div>
+
+					{*
+					*	TODO: Santigo hay que mejorar el codigo para que tome la logica de los precios
+					*	para cada uno de los items.
+					*}
+					<div class="content_prices">
+						<ul>
+							<li>
+								<p>Individual: $57,00</p>
+
+								<button type="submit" name="Submit" class="exclusive">
+									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
+								</button>								
+							</li>
+
+							<li>
+								<p>6 items: $342,00</p>
+
+								<button type="submit" name="Submit" class="exclusive">
+									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
+								</button>								
+							</li>
+
+							<li>
+								<p>12 items: $648,00</p>
+
+								<button type="submit" name="Submit" class="exclusive">
+									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
+								</button>								
+							</li>
+
+							<li>
+								<p>24 items: $1.368,00</p>
+
+								<button type="submit" name="Submit" class="exclusive">
+									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
+								</button>								
+							</li>
+						</ul>
+					</div>
+
+					{*<div class="content_prices clearfix">
 						{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
 							<!-- prices -->
 							<div>
@@ -309,12 +353,12 @@
 								<p class="unit-price"><span id="unit_price_display">{convertPrice price=$unit_price}</span> {l s='per'} {$product->unity|escape:'html':'UTF-8'}</p>
 								{hook h="displayProductPriceBlock" product=$product type="unit_price"}
 							{/if}
-						{/if} {*close if for show price*}
+						{/if} 
 						{hook h="displayProductPriceBlock" product=$product type="weight" hook_origin='product_sheet'}
                         {hook h="displayProductPriceBlock" product=$product type="after_price"}
 						<div class="clear"></div>
-					</div> <!-- end content_prices -->
-					<div class="product_attributes clearfix">
+					</div> <!-- end content_prices -->*}
+					{*<div class="product_attributes clearfix">
 						<!-- quantity wanted -->
 						{if !$PS_CATALOG_MODE}
 						<p id="quantity_wanted_p"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
@@ -383,8 +427,8 @@
 								{/foreach}
 							</div> <!-- end attributes -->
 						{/if}
-					</div> <!-- end product_attributes -->
-					<div class="box-cart-bottom">
+					</div> <!-- end product_attributes -->*}
+					{*<div class="box-cart-bottom">
 						<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
 							<p id="add_to_cart" class="buttons_bottom_block no-print">
 								<button type="submit" name="Submit" class="exclusive">
@@ -393,7 +437,7 @@
 							</p>
 						</div>
 						{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}
-					</div> <!-- end box-cart-bottom -->
+					</div> <!-- end box-cart-bottom -->*}
 
 					<i class="icon-plus-18"></i>
 				</div> <!-- end box-info-product -->

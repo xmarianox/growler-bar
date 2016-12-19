@@ -531,55 +531,56 @@ span.view_scroll_spacer {
 	p {
 		margin-bottom: 0px;
 	}
-	.exclusive{
+	.exclusive {
 		padding: 0;
 		border: 1px solid black;
 		@include border-radius(10px);
 		background-color: black;
 		position: relative;
 		display: block;
-		&:before{
-			font-family: $font-icon;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			color: $light-text-color;
-			font-size: 23px;
-			line-height: 40px;
-			content: "\f07a";
-			z-index: 2;
-			width: 45px;
-			text-align: center;
-			border: 1px solid black;
-			@include border-radius(10px 0 0 10px);
-			@media (max-width: $screen-sm-max) { //max 991px
-				display: none;
-			}
-		}
+		// &:before{
+		// 	font-family: $font-icon;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	color: $light-text-color;
+		// 	font-size: 23px;
+		// 	line-height: 40px;
+		// 	content: "\f07a";
+		// 	z-index: 2;
+		// 	width: 45px;
+		// 	text-align: center;
+		// 	border: 1px solid black;
+		// 	@include border-radius(10px 0 0 10px);
+		// 	@media (max-width: $screen-sm-max) { //max 991px
+		// 		display: none;
+		// 	}
+		// }
 		&.added {
-			&:before {
-			content: "\f00c";
-			}
+			// &:before {
+			// content: "\f00c";
+			// }
 		}
 		&.added.disabled,
-		&.disabled {
-			&:before {
-				height: 51px;
-				content: "\f110";
-				animation: 2s linear 0s normal none infinite spin;
-				-webkit-animation: 2s linear 0s normal none infinite spin;
-				-moz-animation: 2s linear 0s normal none infinite spin;
-				border: none;
-			}
-		}
-		span{
+		// &.disabled {
+		// 	&:before {
+		// 		height: 51px;
+		// 		content: "\f110";
+		// 		animation: 2s linear 0s normal none infinite spin;
+		// 		-webkit-animation: 2s linear 0s normal none infinite spin;
+		// 		-moz-animation: 2s linear 0s normal none infinite spin;
+		// 		border: none;
+		// 	}
+		// }
+		span {
 			@include border-radius(10px);
-
-			font-size: 18px;
+			font-size: 13px;
 			line-height: 22px;
+			text-transform: uppercase;
+			font-family: $gothamBold;
 			border: 1px solid black;
-			padding: 8px 30px 8px 45px;
+			padding: 8px 20px 8px;
 			color: $light-text-color;
 			display: block !important;
 			@include transition(all 0.3s ease);
@@ -867,10 +868,49 @@ table.table-product-discounts{
 	}
 }
 
-/* prices */
+/******************************************************************
+ * PRICES
+******************************************************************/
+.content_title_prices {
+	text-align: center;
+	padding-bottom: 34px;
+
+	h3 {
+		font-size: 18px;
+		line-height: 28px;
+		color: black;
+		margin: 0;
+	}
+}
 .content_prices {
-	padding: 0 16px 6px;
-	border-bottom: 1px solid black;
+	//padding: 0 16px 6px;
+	//border-bottom: 1px solid black;
+
+	ul {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+
+		li {
+			border-top: 1px solid #bfbfbf;
+			padding: 10px 0;
+			// flex
+			@include display-flex;
+			@include flex-direction(row);
+			@include flex-wrap(nowrap);
+			@include align-items(center);
+			@include justify-content(space-between);
+
+			p {
+				font-family: $gothamMedium;
+				color: black;
+			}
+
+			&:last-child {
+				border-bottom: 1px solid #bfbfbf;
+			}
+		}
+	}
 }
 .discount {
 	display: none;

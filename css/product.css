@@ -455,43 +455,17 @@ span.view_scroll_spacer {
   background-color: black;
   position: relative;
   display: block; }
-  .box-info-product .exclusive:before {
-    font-family: "FontAwesome";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    color: #fff;
-    font-size: 23px;
-    line-height: 40px;
-    content: "\f07a";
-    z-index: 2;
-    width: 45px;
-    text-align: center;
-    border: 1px solid black;
-    -moz-border-radius: 10px 0 0 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px 0 0 10px; }
-    @media (max-width: 991px) {
-      .box-info-product .exclusive:before {
-        display: none; } }
-  .box-info-product .exclusive.added:before {
-    content: "\f00c"; }
-  .box-info-product .exclusive.added.disabled:before, .box-info-product .exclusive.disabled:before {
-    height: 51px;
-    content: "\f110";
-    animation: 2s linear 0s normal none infinite spin;
-    -webkit-animation: 2s linear 0s normal none infinite spin;
-    -moz-animation: 2s linear 0s normal none infinite spin;
-    border: none; }
+  .box-info-product .exclusive.added.disabled,
   .box-info-product .exclusive span {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 22px;
+    text-transform: uppercase;
+    font-family: "Gotham-Bold";
     border: 1px solid black;
-    padding: 8px 30px 8px 45px;
+    padding: 8px 20px 8px;
     color: #fff;
     display: block !important;
     -moz-transition: all 0.3s ease;
@@ -499,10 +473,12 @@ span.view_scroll_spacer {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
     @media (max-width: 1199px) {
+      .box-info-product .exclusive.added.disabled,
       .box-info-product .exclusive span {
         padding: 12px 22px 14px 55px;
         font-size: 14px; } }
     @media (max-width: 991px) {
+      .box-info-product .exclusive.added.disabled,
       .box-info-product .exclusive span {
         padding: 8px 12px 10px;
         text-align: left; } }
@@ -744,10 +720,40 @@ table.table-product-discounts {
   .box-security img {
     width: 100%; }
 
-/* prices */
-.content_prices {
-  padding: 0 16px 6px;
-  border-bottom: 1px solid black; }
+/******************************************************************
+ * PRICES
+******************************************************************/
+.content_title_prices {
+  text-align: center;
+  padding-bottom: 34px; }
+  .content_title_prices h3 {
+    font-size: 18px;
+    line-height: 28px;
+    color: black;
+    margin: 0; }
+
+.content_prices ul {
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+  .content_prices ul li {
+    border-top: 1px solid #bfbfbf;
+    padding: 10px 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    .content_prices ul li p {
+      font-family: "Gotham-Medium";
+      color: black; }
+    .content_prices ul li:last-child {
+      border-bottom: 1px solid #bfbfbf; }
 
 .discount {
   display: none; }
