@@ -6349,8 +6349,10 @@ span.exclusive {
     padding: 10px 14px;
     display: block;
     background: black; }
-  .button.ajax_add_to_cart_button:hover span {
-    background: #0c0c0e; }
+  .button.ajax_add_to_cart_button:hover {
+    border: 1px solid #ff9b19; }
+    .button.ajax_add_to_cart_button:hover span {
+      background: #ff9b19; }
 
 .button.lnk_view {
   font-family: "Gotham-Medium";
@@ -6508,10 +6510,14 @@ table.table_block td {
 .sale-box {
   right: -5px; }
 
+.label-success {
+  background: #ff9b19;
+  border: 1px solid  #ff9b19; }
+
 .new-label {
   font: 700 14px/12px Arial, Helvetica, sans-serif;
   color: #fff;
-  background: #6ad4ff;
+  background: #ff9b19;
   text-transform: uppercase;
   padding: 9px 0 7px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
@@ -6533,7 +6539,7 @@ table.table_block td {
     height: 0px;
     border-style: solid;
     border-width: 4px 4px 0px 4px;
-    border-color: #21a3d8 transparent transparent transparent;
+    border-color: #ff9b19 transparent transparent transparent;
     content: ".";
     text-indent: -5000px;
     -webkit-transform: rotate(225deg);
@@ -6547,7 +6553,7 @@ table.table_block td {
     height: 0px;
     border-style: solid;
     border-width: 4px 4px 0px 4px;
-    border-color: #21a3d8 transparent transparent transparent;
+    border-color: #ff9b19 transparent transparent transparent;
     content: ".";
     text-indent: -5000px;
     -webkit-transform: rotate(135deg);
