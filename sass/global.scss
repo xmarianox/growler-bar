@@ -377,17 +377,13 @@ span.exclusive {
 	color: $button-text-color;
 	padding: 0;
 	font-weight: bold;
-	background: rgb(67, 183, 84);
-	@include gradient-vertical(rgba(67, 183, 84, 1), rgba(66, 172, 82, 1));
-	border: 1px solid;
-	border-color: #399a49 #247f32 #1a6d27 #399a49;
-	@include border-radius(0);
+	background: black;
+	border: 1px solid black;
+	@include border-radius(10px);
 	span {
 		display: block;
 		padding: 10px 10px 10px 14px;
-		border: 1px solid;
-		border-color: #74d578;
-		// max 480px
+
 		@media (max-width: $screen-xs) {
 			font-size: 15px;
 			padding-right: 7px;
@@ -415,23 +411,22 @@ span.exclusive {
 		}
 	}
 	&:hover {
-		background: rgb(58, 160, 76);
-		@include gradient-vertical(rgba(58, 160, 76, 1), rgba(58, 160, 74, 1));
-		border-color: #196f28 #399a49 #399a49 #258033;
+		background: #ff9b19;
+		border-color: #ff9b19;
 	}
 }
 
 .button.button-medium.exclusive {
-	border-color: #db8600 #d98305 #c86d26 #d98305;
-	@include background-image(linear-gradient(top, rgba(253, 170, 2, 1), rgba(254, 151, 2, 1)));
+	border-color:#ff9b19;
+	background-color: #ff9b19;
 	span {
-		border-color: #fec133 #febc33 #feb233 #febc33;
+		border-color: #ff9b19;
 	}
 	&:hover {
-		background: #f89609;
-		border-color: #a6550c #ba6708 #db8600 #ba6708;
+		background: black;
+		border-color: black;
 		span {
-			border-color: #fec133;
+			border-color: black;
 		}
 	}
 }
