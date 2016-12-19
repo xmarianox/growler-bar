@@ -265,7 +265,7 @@
 					<div class="content_prices">
 						<ul>
 							<li>
-								<p>Individual: $57,00</p>
+								<p>Individual: <span>$57,00</span></p>
 
 								<button type="submit" name="Submit" class="exclusive">
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
@@ -273,7 +273,7 @@
 							</li>
 
 							<li>
-								<p>6 items: $342,00</p>
+								<p>6 items: <span>$342,00</span></p>
 
 								<button type="submit" name="Submit" class="exclusive">
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
@@ -281,7 +281,7 @@
 							</li>
 
 							<li>
-								<p>12 items: $648,00</p>
+								<p>12 items: <span>$648,00</span></p>
 
 								<button type="submit" name="Submit" class="exclusive">
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
@@ -289,7 +289,7 @@
 							</li>
 
 							<li>
-								<p>24 items: $1.368,00</p>
+								<p>24 items: <span>$1.368,00</span></p>
 
 								<button type="submit" name="Submit" class="exclusive">
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='buy'}{/if}</span>
