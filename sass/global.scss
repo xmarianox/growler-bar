@@ -1869,7 +1869,7 @@ div.star a:hover {
 			margin: 0;
 
 			li {
-				@include size(52px, 52px);
+				@include size(42px, 42px);
 				@include border-radius(50%);
 				background-color: black;
 				display: inline-block;
@@ -1879,8 +1879,8 @@ div.star a:hover {
 				a {
 					display: inline-block;
 					color: white;
-					font-size: 30px;
-					line-height: 41px;
+					font-size: 22px;
+					line-height: 33px;
 
 					span {
 						display: none;

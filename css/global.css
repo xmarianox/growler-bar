@@ -7515,8 +7515,8 @@ div.star a:hover {
       text-align: center;
       margin: 0; }
       #footer #social_block ul li {
-        width: 52px;
-        height: 52px;
+        width: 42px;
+        height: 42px;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
@@ -7527,8 +7527,8 @@ div.star a:hover {
         #footer #social_block ul li a {
           display: inline-block;
           color: white;
-          font-size: 30px;
-          line-height: 41px; }
+          font-size: 22px;
+          line-height: 33px; }
           #footer #social_block ul li a span {
             display: none; }
           #footer #social_block ul li a:before {
