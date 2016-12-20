@@ -1784,7 +1784,7 @@ div.star a:hover {
 	@include size(100%, auto);
 	overflow: hidden;
 	background-color: #e5e5e5;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	text-align: center;
 
 	#block_various_links_footer {
@@ -1807,7 +1807,7 @@ div.star a:hover {
 			li {
 				font-family: $gothamMedium;
 				font-weight: bold;
-				font-size: 14px;
+				font-size: 12px;
 				line-height: 14px;
 				display: inline-block;
 				text-transform: uppercase;
@@ -1848,24 +1848,25 @@ div.star a:hover {
 
 	#social_block {
 		@include size(100%, auto);
-		padding: 15px;
+		padding: 10px;
 
 		@media #{$breakpoint-desktop-medium} {
-			padding: 30px;	
+			padding: 20px;	
 		}
 
 		h4 {
 			font-family: $gothamMedium;
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 18px;
 			line-height: 24px;
 			text-align: center;
-			margin-bottom: 26px;
+			margin-bottom: 15px;
 		}
 
 		ul {
 			@include size(100%, auto);
 			text-align: center;
+			margin: 0;
 
 			li {
 				@include size(52px, 52px);
@@ -1964,7 +1965,7 @@ div.star a:hover {
 
 		.copy {
 			font-weight: bold;
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 28px;
 			text-transform: uppercase;
 			color: black;
@@ -1974,7 +1975,7 @@ div.star a:hover {
 			color: black;
 			font-size: 12px;
 			line-height: 18px;
-			margin-bottom: 30px;
+			margin-bottom: 10px;
 		}
 	}
 }

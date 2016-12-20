@@ -7454,7 +7454,7 @@ div.star a:hover {
   height: auto;
   overflow: hidden;
   background-color: #e5e5e5;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center; }
   #footer #block_various_links_footer {
     width: 100%;
@@ -7473,7 +7473,7 @@ div.star a:hover {
       #footer #block_various_links_footer ul li {
         font-family: "Gotham-Medium";
         font-weight: bold;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 14px;
         display: inline-block;
         text-transform: uppercase;
@@ -7498,21 +7498,22 @@ div.star a:hover {
   #footer #social_block {
     width: 100%;
     height: auto;
-    padding: 15px; }
+    padding: 10px; }
     @media (min-width: 92em) {
       #footer #social_block {
-        padding: 30px; } }
+        padding: 20px; } }
     #footer #social_block h4 {
       font-family: "Gotham-Medium";
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 24px;
       text-align: center;
-      margin-bottom: 26px; }
+      margin-bottom: 15px; }
     #footer #social_block ul {
       width: 100%;
       height: auto;
-      text-align: center; }
+      text-align: center;
+      margin: 0; }
       #footer #social_block ul li {
         width: 52px;
         height: 52px;
@@ -7563,7 +7564,7 @@ div.star a:hover {
     font-family: "Gotham-Medium"; }
     #footer #growlers-block .copy {
       font-weight: bold;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 28px;
       text-transform: uppercase;
       color: black; }
@@ -7571,7 +7572,7 @@ div.star a:hover {
       color: black;
       font-size: 12px;
       line-height: 18px;
-      margin-bottom: 30px; }
+      margin-bottom: 10px; }
 
 #reinsurance_block {
   clear: both !important; }

@@ -6,7 +6,7 @@
 	.form-group {
 		margin-bottom: 0;
 		.form-control {
-			max-width: 380px;
+			max-width: 335px;
 			display: inline-block;
 			margin-right: 6px;
 			@media (min-width: $screen-sm) and (max-width: $screen-md-max) { // min 768px max 1199px
@@ -33,39 +33,39 @@
 		width: 100%;
 		overflow: hidden;
 		background-color: white;
-		padding: 30px 16px;
+		padding: 20px 16px;
 		margin-bottom: 0;
 
 		h4 {
 			font-family: $gothamLight;
 			text-transform: uppercase;
 			color: #555454;
-			font-size: 30px;
+			font-size: 28px;
 			line-height: normal;
 			text-align: center;
 			border: none;
 			background: none;
+			margin: 0;
 			&:after {
 				display: none;
 			}
 
 			@media #{$breakpoint-tablet-port} {
-				font-size: 36px;
+				font-size: 32px;
 			}
 		}
 
 		p {
 			font-family: $gothamBook;
-			font-size: 22px;
-			line-height: 28px;
+			font-size: 14px;
+			line-height: 18px;
 			color: black;
 			text-align: center;
-			margin: 0 auto 30px;
-
-			@media #{$breakpoint-tablet-port} {
-				font-size: 16px;
-				line-height: 26px;
-			}
+			margin: 5px auto 15px;
+			// @media #{$breakpoint-tablet-port} {
+			// 	font-size: 16px;
+			// 	line-height: 26px;
+			// }
 		}
 
 		.block_content {
@@ -74,21 +74,21 @@
 		.form-group {
 			margin: 0 auto;
 			margin-bottom: 0;
-			max-width: 380px;
+			max-width: 335px;
 			overflow: hidden;
 
 			.form-control {
-				height: 50px;
-				max-width: 380px;
+				height: 45px;
+				max-width: 335px;
 				background: black;
 				border-color: black;
 				@include border-radius(10px);
 				font-family: $gothamMedium;
-				font-size: 13px;
-				line-height: 48px;
+				font-size: 12px;
+				line-height: 43px;
 				text-align: center;
 				color: white;
-				padding: 0 43px 0 12px;
+				padding: 0 35px 0 12px;
 				display: block;
 				margin: 0 auto;
 				float: left;
@@ -97,18 +97,18 @@
 				}
 			}
 			.button-small {
-				margin-left: -43px;
+				margin-left: -42px;
 				border: none;
 				background: none;
 				text-align: center;
 				color: #908f8f;
-				padding: 8px;
+				padding: 8px 10px;
 				float: left;
-				margin-top: 3px;
+				margin-top: 0px;
 				&:before {
 					content: "\f138";
 					font-family: $font-icon;
-					font-size: 28px;
+					font-size: 24px;
 					line-height: 28px;
 				}
 				&:hover {
