@@ -6,10 +6,26 @@ Product list Styles
 ********************************************************/
 
 ul.product_list {
+	&.active {
+		width: 100%;
+		// flex
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include align-items(stretch);
+		@include justify-content(space-between);
+	}
+
 	.product-name {
 		display: inline-block;
 		width: 100%;
 		overflow: hidden;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.price.product-price {
+		font-size: 15px;
+		line-height: 20px;
 	}
 	.availability {
 		span {
@@ -203,6 +219,9 @@ ul.product_list.grid {
 	> li {
 		padding-bottom: 20px;
 		text-align: center;
+		margin: 0 auto;
+		@include flex-basis(20%);
+
 		@media (min-width: $screen-xs) and (max-width: $screen-xs-max) { // min 480px max 767px
 			width: 50%;
 			float: left;
