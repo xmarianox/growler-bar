@@ -528,32 +528,22 @@ span.exclusive {
 .button.lnk_view {
 	font-family: $gothamMedium;
 	font-size: 12px;
+	color: $button-text-color;
 	text-transform: uppercase;
-	color: $base-text-color;
-	text-shadow: 1px 1px rgba(255, 255, 255, 1);
 	padding: 0;
-	border: 1px solid;
-	border-color: #cacaca #b7b7b7 #9a9a9a #b7b7b7;
+	border: 1px solid black;
 	@include border-radius(8px);
 	overflow: hidden;
 	span {
-		border: 1px solid;
-		border-color: $light-border-color;
 		padding: 10px 14px;
 		display: block;
-		background: rgb(247, 247, 247);
-		@include gradient-vertical(rgba(247, 247, 247, 1), rgba(237, 237, 237, 1));
+		background: black;
 	}
 	&:hover {
-		border-color: #9e9e9e #9e9e9e #c8c8c8 #9e9e9e;
+		border: 1px solid #ff9b19;
 		span {
-			filter: none;
-			background: #e7e7e7;
+			 background: #ff9b19;
 		}
-	}
-	i.left {
-		padding-right: 8px;
-		color: #777777;
 	}
 }
 
@@ -636,8 +626,7 @@ table.table_block td {
 
 //product elements
 .product-name {
-	font-family: $gothamMedium;
-	font-weight: bold;
+	font-family: $gothamBold;
 	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 24px;
@@ -1116,7 +1105,9 @@ table.table_block td {
 	border-bottom: 1px solid $base-border-color;
 	overflow: hidden;
 	span.heading-counter {
-		font: bold 13px / 22px $font-family;
+		//font: bold 13px / 22px $font-family;
+		font-size: 13px;
+		line-height: 22px;
 		float: right;
 		color: $base-text-color;
 		text-transform: none;

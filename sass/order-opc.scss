@@ -81,6 +81,24 @@
 	#address_invoice_form.form-group {
 		margin-bottom: 30px;
 	}
+
+
+	.flex-container {
+		width: 100%;
+		// flex
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include align-items(stretch);
+		@include justify-content(space-between);
+
+		&-item {
+			flex-flow: 50%;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+	}
+
 }
 
 #new_account_form .id_state,

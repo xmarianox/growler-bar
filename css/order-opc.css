@@ -58,6 +58,22 @@
     margin-bottom: 15px; }
   #order-opc #address_invoice_form.form-group {
     margin-bottom: 30px; }
+  #order-opc .flex-container {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    #order-opc .flex-container-item {
+      flex-flow: 50%;
+      margin: 0 auto;
+      padding: 0 15px; }
 
 #new_account_form .id_state,
 #new_account_form .dni,
