@@ -24,5 +24,6 @@
 */
 
 $(document).ready(function(){
-	$('#home-page-tabs li:first, #index .tab-content ul:first').addClass('active');
+	//$('#home-page-tabs li:first, #index .tab-content ul:first').addClass('active');
+	$('#home-page-tabs').find('li').first().next().children('a').click();
 });
