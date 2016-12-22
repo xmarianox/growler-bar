@@ -8749,4 +8749,18 @@ div.star.star_hover:after {
 .pointer-box {
   cursor: pointer; }
 
+div[id^="crMz"] {
+  display: none !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
+  text-indent: -9999px; }
+
+span[id^="crMz"] {
+  display: none !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
+  text-indent: -9999px; }
+
 /*# sourceMappingURL=global.css.map */

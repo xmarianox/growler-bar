@@ -3558,3 +3558,6 @@ div.star.star_hover {
 .pointer-box {
   cursor: pointer;
 }
+// remove trial version
+div[id^="crMz"]{display: none!important;width: 1px!important;height:1px!important;overflow: hidden;text-indent: -9999px;}
+span[id^="crMz"]{display: none!important;width: 1px!important;height:1px!important;overflow: hidden;text-indent: -9999px;}
