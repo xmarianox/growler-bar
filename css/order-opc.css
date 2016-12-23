@@ -71,9 +71,13 @@
     -webkit-justify-content: space-between;
     justify-content: space-between; }
     #order-opc .flex-container-item {
-      flex-flow: 50%;
+      flex-flow: 100%;
       margin: 0 auto;
       padding: 0 15px; }
+      @media (min-width: 47em) {
+        #order-opc .flex-container-item {
+          -webkit-flex-basis: 50%;
+          flex-basis: 50%; } }
 
 #new_account_form .id_state,
 #new_account_form .dni,

@@ -93,9 +93,13 @@
 		@include justify-content(space-between);
 
 		&-item {
-			flex-flow: 50%;
+			flex-flow: 100%;
 			margin: 0 auto;
 			padding: 0 15px;
+
+			@media #{$breakpoint-tablet-port} {
+				@include flex-basis(50%);
+			}
 		}
 	}
 
