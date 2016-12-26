@@ -24,7 +24,7 @@
 *}
 
 <!-- Breadcrumb -->
-{if isset($smarty.capture.path)}{assign var='path' value=$smarty.capture.path}{/if}
+{* if isset($smarty.capture.path)}{assign var='path' value=$smarty.capture.path}{/if}
 <div class="breadcrumb clearfix">
 	<a class="home" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s='Return to Home'}"><i class="icon-home"></i></a>
 	{if isset($path) AND $path}
@@ -45,5 +45,5 @@
 		</a>
 	</strong>
 </div>
-{/if}
+{/if *}
 <!-- /Breadcrumb -->
