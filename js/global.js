@@ -109,6 +109,12 @@ $(document).ready(function(){
 		if (e.offsetX >= 16 && e.offsetX <= 39 && e.offsetY >= 16 && e.offsetY <= 34)
 			$(this).fadeOut();
 	});
+	
+	$('.sf-contener a').click(function(e) {
+		if ($(this).parent().parent('ul').hasClass('submenu-container') && $(this).hasClass('sf-with-ul')) {
+			e.preventDefault();
+		}
+	});
 });
 
 function highdpiInit()
