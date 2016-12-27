@@ -216,6 +216,13 @@ Product list(Grid) Styles
 ********************************************************/
 
 ul.product_list.grid {
+	// flex
+	@include display-flex;
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
+	@include align-items(stretch);
+	@include justify-content(space-between);
+
 	> li {
 		padding-bottom: 20px;
 		text-align: center;
@@ -389,6 +396,13 @@ Product list(List) Styles
 ********************************************************/
 
 ul.product_list.list {
+	// flex
+	@include display-flex;
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
+	@include align-items(stretch);
+	@include justify-content(space-between);
+
 	> li {
 		.left-block {
 			@media (max-width: $screen-xs - 1) { // max 479px
