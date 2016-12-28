@@ -45,6 +45,8 @@
     border-top: 1px solid #d6d4d4;
     margin-top: 20px;
     padding-top: 20px; }
+    #order-opc .opc-add-save p {
+      display: inline-block; }
   #order-opc #message {
     margin-bottom: 35px; }
   #order-opc #opc_payment_methods {
