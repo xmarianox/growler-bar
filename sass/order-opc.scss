@@ -103,6 +103,31 @@
 
 			@media #{$breakpoint-tablet-port} {
 				@include flex-basis(50%);
+
+				&.big {
+					padding: 0;
+					@include flex-basis(100%);
+				}
+			}
+		}
+	}
+
+	.flex-form-container {
+		width: 100%;
+		// flex
+		@include display-flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include align-items(stretch);
+		@include justify-content(space-between);
+
+		&-item {
+			flex-flow: 100%;
+			margin: 0 auto;
+			padding: 0 15px;
+
+			@media #{$breakpoint-tablet-port} {
+				@include flex-basis(50%);
 			}
 		}
 	}
