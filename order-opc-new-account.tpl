@@ -73,7 +73,7 @@
 								<span class="form_info">{l s='(five characters min.)'}</span>
 							</div>
 							<div class="required clearfix gender-line">
-								<label>{l s='Social title'}</label>
+								<label>{l s='Sexo'}</label>
 								{foreach from=$genders key=k item=gender}
 								<div class="radio-inline">
 									<label for="id_gender{$gender->id_gender}" class="top">
@@ -175,9 +175,8 @@
 							{elseif $field_name eq "dni"}
 							{assign var='dniExist' value=true}
 							<div class="required dni form-group">
-								<label for="dni">{l s='Identification number'} <sup>*</sup></label>
+								<label for="dni">{l s='Documento'} <sup>*</sup></label>
 								<input type="text" class="text form-control validate" name="dni" id="dni" data-validate="isDniLite" value="{if isset($guestInformations) && isset($guestInformations.dni) && $guestInformations.dni}{$guestInformations.dni}{/if}" />
-								<span class="form_info">{l s='DNI / NIF / NIE'}</span>
 							</div>
 							{elseif $field_name eq "firstname"}
 							<div class="required text form-group">
@@ -245,9 +244,8 @@
 							{/if}
 							{if !$dniExist}
 							<div class="required dni form-group">
-								<label for="dni">{l s='Identification number'} <sup>*</sup></label>
+								<label for="dni">{l s='Documento'} <sup>*</sup></label>
 								<input type="text" class="text form-control validate" name="dni" id="dni" data-validate="isDniLite" value="{if isset($guestInformations) && isset($guestInformations.dni) && $guestInformations.dni}{$guestInformations.dni}{/if}" />
-								<span class="form_info">{l s='DNI / NIF / NIE'}</span>
 							</div>
 							{/if}
 							<div class="form-group is_customer_param">
@@ -300,9 +298,8 @@
 										{elseif $field_name eq "dni"}
 										{assign var='dniExist' value=true}
 										<div class="required form-group dni_invoice">
-											<label for="dni_invoice">{l s='Identification number'} <sup>*</sup></label>
+											<label for="dni_invoice">{l s='Documento'} <sup>*</sup></label>
 											<input type="text" class="text form-control validate" name="dni_invoice" id="dni_invoice" data-validate="isDniLite" value="{if isset($guestInformations) && isset($guestInformations.dni_invoice) && $guestInformations.dni_invoice}{$guestInformations.dni_invoice}{/if}" />
-											<span class="form_info">{l s='DNI / NIF / NIE'}</span>
 										</div>
 										{elseif $field_name eq "firstname"}
 										<div class="required form-group">
@@ -373,9 +370,8 @@
 										{/if}
 										{if !$dniExist}
 										<div class="required form-group dni_invoice">
-											<label for="dni">{l s='Identification number'} <sup>*</sup></label>
+											<label for="dni">{l s='Documento'} <sup>*</sup></label>
 											<input type="text" class="text form-control validate" name="dni_invoice" id="dni_invoice" data-validate="isDniLite" value="{if isset($guestInformations) && isset($guestInformations.dni_invoice) && $guestInformations.dni_invoice}{$guestInformations.dni_invoice}{/if}" />
-											<span class="form_info">{l s='DNI / NIF / NIE'}</span>
 										</div>
 										{/if}
 										<div class="form-group is_customer_param">
