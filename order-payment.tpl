@@ -22,6 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+<div id="payment_area" {if !$is_logged || $is_guest}style="display: none;"{/if}>
 {if !$opc}
 	{addJsDefL name=txtProduct}{l s='product' js=1}{/addJsDefL}
 	{addJsDefL name=txtProducts}{l s='products' js=1}{/addJsDefL}
@@ -51,3 +52,4 @@
 {else}
     {include file = "$tpl_dir./order-payment-classic.tpl"}
 {/if}
+</div>

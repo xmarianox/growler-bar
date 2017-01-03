@@ -1,5 +1,5 @@
 /*
-* 2007-2015 PrestaShop
+* 2007-2016 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,7 +18,7 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2015 PrestaShop SA
+*  @copyright  2007-2016 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 */
@@ -76,7 +76,7 @@ $(document).ready(function(){
 			$('#login_form_content').slideDown('slow');
 			$('#new_account_form').slideUp('slow');
 		});
-
+		
 		// LOGIN FORM BACK
 		$(document).on('click', '#backLogin', function(e){
 			e.preventDefault();
@@ -85,6 +85,7 @@ $(document).ready(function(){
 			$('#new_account_form').slideDown('slow');
 			$('#login_form_content').slideUp('slow');
 		});
+		
 		// LOGIN FORM SENDING
 		$(document).on('click', '#SubmitLogin', function(e){
 			e.preventDefault();
@@ -829,11 +830,6 @@ function updateNewAccountToAddressBlock(is_adv_api)
 							$(this).html(json.block_user_info_nav).fadeIn();
 						});
 					}
-					
-					// Mostramos el carrier y el payment
-					$('#carrier_area').show();
-					$('#payment_area').show();
-					$('.cart_total_delivery').show(); // ITEM DE TOTAL ENVIO
 
 					$(this).fadeIn('fast', function() {
                         if ($('#gift-price').length == 1)

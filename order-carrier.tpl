@@ -22,6 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+<script type="text/javascript" src="{$js_dir}envios_oca.js"></script>
 {if !$opc}
 	{capture name=path}{l s='Shipping:'}{/capture}
 	{assign var='current_step' value='shipping'}
@@ -31,7 +32,7 @@
 		{include file="$tpl_dir./errors.tpl"}
 		<form id="form" action="{$link->getPageLink('order', true, NULL, "{if $multi_shipping}multi-shipping={$multi_shipping}{/if}")|escape:'html':'UTF-8'}" method="post" name="carrier_area">
 {else}
-	<div id="carrier_area" class="opc-main-block">
+	<div id="carrier_area" class="opc-main-block" {if !$is_logged || $is_guest}style="display: none;"{/if}>
 		<h1 class="page-heading step-num"><span>2</span> {l s='Delivery methods'}</h1>
 			<div id="opc_delivery_methods" class="opc-main-block">
 				<div id="opc_delivery_methods-overlay" class="opc-overlay" style="display: none;"></div>

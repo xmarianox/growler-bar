@@ -21,11 +21,11 @@
 				<p class="submit">
 					{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
 					<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium"><span><i class="icon-lock left"></i>{l s='Sign in'}</span></button>
+					<button type="button" id="backLogin" name="BackLogin" class="button btn btn-default button-medium"><span><i class="icon-undo left"></i>{l s='Volver'}</span></button>
 				</p>
 			</div>
 		</fieldset>
 	</form>
-	
 	<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="new_account_form" class="std" autocomplete="on" autofill="on">
 		<fieldset>
 			<div class="box">
@@ -190,13 +190,28 @@
 							</div>
 							{elseif $field_name eq "address1"}
 							<div class="required text form-group">
-								<label for="address1">{l s='Address'} <sup>*</sup></label>
+								<label for="address1">{l s='Calle'} <sup>*</sup></label>
 								<input type="text" class="text form-control validate" name="address1" id="address1" data-validate="isAddress" value="{if isset($guestInformations) && isset($guestInformations.address1) && isset($guestInformations) && isset($guestInformations.address1) && $guestInformations.address1}{$guestInformations.address1}{/if}" />
 							</div>
 							{elseif $field_name eq "address2"}
 							<div class="text{if !in_array($field_name, $required_fields)} is_customer_param{/if} form-group">
 								<label for="address2">{l s='Address (Line 2)'}{if in_array($field_name, $required_fields)} <sup>*</sup>{/if}</label>
 								<input type="text" class="text form-control validate" name="address2" id="address2" data-validate="isAddress" value="{if isset($guestInformations) && isset($guestInformations.address2) && isset($guestInformations) && isset($guestInformations.address2) && $guestInformations.address2}{$guestInformations.address2}{/if}" />
+							</div>
+							{elseif $field_name eq "numero"}
+							<div class="text{if !in_array($field_name, $required_fields)} is_customer_param{/if} form-group">
+								<label for="numero">{l s='Número'} <sup>*</sup></label>
+								<input type="text" class="text form-control validate" name="numero" id="numero" data-validate="isAddress" value="{if isset($guestInformations) && isset($guestInformations.numero) && isset($guestInformations) && isset($guestInformations.numero) && $guestInformations.numero}{$guestInformations.numero}{/if}" />
+							</div>
+							{elseif $field_name eq "piso"}
+							<div class="text{if !in_array($field_name, $required_fields)} is_customer_param{/if} form-group">
+								<label for="piso">{l s='Piso'}{if in_array($field_name, $required_fields)} <sup>*</sup>{/if}</label>
+								<input type="text" class="text form-control validate" name="piso" id="piso" data-validate="isAddress" value="{if isset($guestInformations) && isset($guestInformations.numero) && isset($guestInformations) && isset($guestInformations.piso) && $guestInformations.piso}{$guestInformations.piso}{/if}" />
+							</div>
+							{elseif $field_name eq "depto"}
+							<div class="text{if !in_array($field_name, $required_fields)} is_customer_param{/if} form-group">
+								<label for="depto">{l s='Departamento'}{if in_array($field_name, $required_fields)} <sup>*</sup>{/if}</label>
+								<input type="text" class="text form-control validate" name="depto" id="depto" data-validate="isAddress" value="{if isset($guestInformations) && isset($guestInformations.numero) && isset($guestInformations) && isset($guestInformations.depto) && $guestInformations.depto}{$guestInformations.depto}{/if}" />
 							</div>
 							{elseif $field_name eq "postcode"}
 							{$postCodeExist = true}
