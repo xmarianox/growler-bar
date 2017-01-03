@@ -8,6 +8,8 @@
 #order-opc {
 	line-height: 20px;
 	.box {
+		background: white;
+		border: none;
 		padding-bottom: 20px;
 	}
 	.cart_navigation {
@@ -85,8 +87,6 @@
 	#address_invoice_form.form-group {
 		margin-bottom: 30px;
 	}
-
-
 	.flex-container {
 		width: 100%;
 		// flex
@@ -110,8 +110,15 @@
 				}
 			}
 		}
-	}
 
+		.page-subheading {
+			font-family: $gothamMedium;
+			color: black;
+			//font-size: 30px;
+			font-size: 27px;
+			padding: 0px;
+		}
+	}
 	.flex-form-container {
 		width: 100%;
 		// flex
@@ -131,11 +138,25 @@
 			}
 		}
 	}
+}
 
+#login_form {
+	.page-subheading {
+		font-family: $gothamMedium;
+		color: black;
+		text-align: left;
+		//font-size: 30px;
+		font-size: 27px;
+		padding: 0px;
+	}
 }
 
 #new_account_form .id_state,
 #new_account_form .dni,
 #new_account_form .postcode {
 	display: none;
+}
+
+#new_account_form {
+	border-top: 1px solid #d6d4d4;
 }
