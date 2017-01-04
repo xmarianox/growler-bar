@@ -275,7 +275,6 @@
 								<button type="submit" name="Submit" class="exclusive">
 									<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Comprar'}{/if}</span>
 								</button>
-								<span class="clearfix"></span>
 							</p>
 							{/if}
 							<!-- minimal quantity wanted -->
