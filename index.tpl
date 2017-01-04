@@ -35,9 +35,6 @@
 	<div id="home-page-brand-list">
 		<ul>
 			{*
-			Ordenar las marcas de abajo por premiumness 
-			(HNK, Amstel, Kunstmann, Sol, Imperial, Bud, Schneider) Abajo 
-			(1888, La Celia, Piscos, Red Bull, Real) sacar el abuelo. Mariano? index.tpl
 			<li><i class="icon-palermo"></i></li>
 			<li><i class="icon-bieckert"></i></li>
 			<li><i class="icon-santafe"></i></li>
