@@ -35,27 +35,31 @@
 	<div id="home-page-brand-list">
 		<ul>
 			{*
+			Ordenar las marcas de abajo por premiumness 
+			(HNK, Amstel, Kunstmann, Sol, Imperial, Bud, Schneider) Abajo 
+			(1888, La Celia, Piscos, Red Bull, Real) sacar el abuelo. Mariano? index.tpl
 			<li><i class="icon-palermo"></i></li>
 			<li><i class="icon-bieckert"></i></li>
 			<li><i class="icon-santafe"></i></li>
 			<li><i class="icon-salta"></i></li>
 			<li><i class="icon-cordoba"></i></li>
 			<li><i class="icon-lavictoria"></i></li>
+			<li><i class="icon-elabuelo"></i></li>
 			*}
-			<li><i class="icon-schneider"></i></li>
 			<li><i class="icon-heineken"></i></li>
-			<li><i class="icon-budweiser"></i></li>
-			<li><i class="icon-imperial"></i></li>
-			<li><i class="icon-sol"></i></li>
 			<li><i class="icon-amstel"></i></li>
 			<li><i class="icon-kunstmann"></i></li>
-			<li><i class="icon-real"></i></li>
+			<li><i class="icon-sol"></i></li>
+			<li><i class="icon-imperial"></i></li>
+			<li><i class="icon-budweiser"></i></li>
+			<li><i class="icon-schneider"></i></li>
+			
 			<li><i class="icon-1888"></i></li>
-			<li><i class="icon-elabuelo"></i></li>
 			<li><i class="icon-lacelia"></i></li>
 			<li><i class="icon-triple"></i></li>
 			<li><i class="icon-mistral"></i></li>
 			<li><i class="icon-redbull"></i></li>
+			<li><i class="icon-real"></i></li>
 		</ul>
 	</div>
 {/if}
