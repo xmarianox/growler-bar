@@ -430,7 +430,7 @@ span.view_scroll_spacer {
 
 .product_attributes,
 .box-cart-bottom {
-  padding: 16px;
+  padding: 16px 0;
   border-bottom: 1px solid black; }
 
 .box-cart-bottom {
@@ -472,16 +472,6 @@ span.view_scroll_spacer {
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    @media (max-width: 1199px) {
-      .box-info-product .exclusive.added.disabled,
-      .box-info-product .exclusive span {
-        padding: 12px 22px 14px 55px;
-        font-size: 14px; } }
-    @media (max-width: 991px) {
-      .box-info-product .exclusive.added.disabled,
-      .box-info-product .exclusive span {
-        padding: 8px 12px 10px;
-        text-align: left; } }
 .box-info-product .icon-plus-18 {
   margin: 16px 0; }
 
@@ -656,23 +646,50 @@ table.table-product-discounts {
   font-weight: 700; }
 
 /* quantity_wanted */
-#quantity_wanted_p input {
-  width: 50px;
-  height: 27px;
-  padding: 0 6px;
-  float: left;
-  border: 1px solid #d6d4d4;
-  line-height: 27px;
-  margin-left: 3px; }
-#quantity_wanted_p .btn {
-  float: left;
-  margin-left: 3px; }
-#quantity_wanted_p label {
-  line-height: 27px;
-  display: inline-block;
-  margin-right: 4px;
-  margin-bottom: 0px;
-  float: left; }
+#quantity_wanted_p {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  #quantity_wanted_p label {
+    line-height: 27px;
+    display: inline-block;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 4px; }
+  #quantity_wanted_p input {
+    width: 50px;
+    height: 27px;
+    padding: 0 6px;
+    border: 1px solid #d6d4d4;
+    line-height: 27px;
+    margin: auto;
+    margin-left: 0px; }
+  #quantity_wanted_p .btn {
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 3px; }
+    #quantity_wanted_p .btn.btn.button-plus {
+      margin-right: auto; }
+  #quantity_wanted_p .exclusive {
+    margin: auto; }
+    #quantity_wanted_p .exclusive span {
+      font-size: 11px !important;
+      line-height: 16px !important;
+      padding: 8px 12px !important; }
+    @media (min-width: 47em) {
+      #quantity_wanted_p .exclusive {
+        margin: 5px auto auto; } }
+    @media (min-width: 70em) {
+      #quantity_wanted_p .exclusive {
+        margin: auto; } }
 
 /* availability_statut */
 #availability_statut span#availability_label,

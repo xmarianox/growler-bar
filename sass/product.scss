@@ -511,7 +511,7 @@ span.view_scroll_spacer {
 }
 .product_attributes,
 .box-cart-bottom {
-	padding: 16px;
+	padding: 16px 0;
 	border-bottom: 1px solid black;
 }
 .box-cart-bottom{
@@ -538,25 +538,7 @@ span.view_scroll_spacer {
 		background-color: black;
 		position: relative;
 		display: block;
-		// &:before{
-		// 	font-family: $font-icon;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	bottom: 0;
-		// 	color: $light-text-color;
-		// 	font-size: 23px;
-		// 	line-height: 40px;
-		// 	content: "\f07a";
-		// 	z-index: 2;
-		// 	width: 45px;
-		// 	text-align: center;
-		// 	border: 1px solid black;
-		// 	@include border-radius(10px 0 0 10px);
-		// 	@media (max-width: $screen-sm-max) { //max 991px
-		// 		display: none;
-		// 	}
-		// }
+
 		&.added {
 			// &:before {
 			// content: "\f00c";
@@ -584,14 +566,14 @@ span.view_scroll_spacer {
 			color: $light-text-color;
 			display: block !important;
 			@include transition(all 0.3s ease);
-			@media  (max-width: $screen-md-max) { //max 1199px
-				padding: 12px 22px 14px 55px;
-				font-size: 14px;
-			}
-			@media (max-width: $screen-sm-max) {  //max 991px
-				padding: 8px 12px 10px;
-				text-align: left;
-			}
+			// @media  (max-width: $screen-md-max) { //max 1199px
+			// 	padding: 12px 22px 14px 55px;
+			// 	font-size: 14px;
+			// }
+			// @media (max-width: $screen-sm-max) {  //max 991px
+			// 	padding: 8px 12px 10px;
+			// 	text-align: left;
+			// }
 		}
 		// &:hover{
 		// 	background-color: lighten(black, 97%);
@@ -795,27 +777,58 @@ table.table-product-discounts{
 }
 
 /* quantity_wanted */
-#quantity_wanted_p{
+#quantity_wanted_p {
+	width: 100%;
+	// flex
+	@include display-flex;
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
+	@include align-items(center);
+	@include justify-content(space-between);
+	
+	label{
+		line-height: 27px;
+		display: inline-block;
+		margin: auto;
+		margin-left: 0px;
+		margin-right: 4px;
+	}
 	input {
 		width: 50px;
 		height: 27px;
 		padding: 0 6px;
-		float: left;
 		border: $main_border;
 		line-height: 27px;
-		margin-left: 3px;
+		margin: auto;
+		margin-left: 0px;
 	}
 	.btn {
-		float: left;
-		margin-left: 3px
+		margin: auto;
+		margin-right: 0px;
+		margin-left: 3px;
+
+		&.btn.button-plus {
+			margin-right: auto;
+		}
 	}
-	label{
-		line-height: 27px;
-		display: inline-block;
-		margin-right: 4px;
-		margin-bottom: 0px;
-		float: left;
+
+	.exclusive {
+		margin: auto;
+
+		span {
+			font-size: 11px !important;
+			line-height: 16px !important;
+			padding: 8px 12px !important;
+		}
+
+		@media #{$breakpoint-tablet-port} {
+			margin: 5px auto auto;
+		}
+		@media #{$breakpoint-laptop-small} {
+			margin: auto;
+		}
 	}
+	
 }
 
 /* availability_statut */
