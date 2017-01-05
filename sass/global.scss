@@ -36,6 +36,123 @@ textarea {
 	resize: none;
 }
 
+// modal-gateway
+#modal-gateway {
+	@include size(100%, 100vh);
+	background-color: rgba(0, 0, 0, .5);
+	overflow: hidden;
+	//
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5004;
+	//
+	@include display-flex;
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+
+	.modal-gateway-body {
+		@include size(100%, auto);
+		max-width: 90%;
+		background-color: black;
+		border-radius: 6px;
+		overflow: hidden;
+		margin: auto;
+		text-align: center;
+		padding: 10px;
+
+		h2 {
+			font-family: $gothamMedium;
+			font-size: 20px;
+			line-height: 24px;
+			color: #fb9f0b;
+			margin: 0;
+
+			@media #{$breakpoint-laptop-small} {
+				font-size: 28px;
+				line-height: 32px;	
+			}
+		}
+
+		.icon-growlers {
+			margin: 4px auto 0;
+
+			@media #{$breakpoint-laptop-small} {
+				@include size(326px, 38px);
+			}
+		}
+
+		p {
+			font-family: $gothamMedium;
+			font-size: 20px;
+			line-height: 24px;
+			color: #fb9f0b;
+			margin: 0;
+			
+			@media #{$breakpoint-laptop-small} {
+				font-size: 28px;
+				line-height: 32px;	
+			}
+		}
+
+		@media #{$breakpoint-tablet-land} {
+			max-width: 800px;
+			padding: 30px;
+		}
+	}
+
+	.modal-gateway-footer {
+		border-top: 1px solid #727272;
+		padding-top: 10px;
+
+		@media #{$breakpoint-laptop-small} {
+			padding-top: 20px;
+		}
+		
+		span {
+			font-family: $gothamBold;
+			font-size: 11px;
+			line-height: 12px;
+			color: white;
+			display: block;
+			margin-bottom: 10px;
+
+			@media #{$breakpoint-laptop-small} {
+				font-size: 12px;
+			}
+
+			&:last-child {
+				font-size: 10px;
+				color: #fb9f0b;
+				margin: 0;
+			}
+		}
+	}
+
+	.btn-gateway {
+		@include size(60px, 60px);
+		background-color: black;
+		overflow: hidden;
+		border: 2px solid white;
+		border-radius: 50%;
+		// text
+		font-family: $gothamBold;
+		color: white;
+		font-size: 26px;
+		//
+		margin: 25px 8px;
+
+		@media #{$breakpoint-laptop-small} {
+			@include size(80px, 80px);
+			font-size: 30px;
+			margin: 35px 8px;
+		}
+	}
+}
+
 //structure
 #header {
 	z-index: 5003;
@@ -52,8 +169,14 @@ textarea {
 
 #columns {
 	position: relative;
-	//padding-bottom: 50px;
 	padding-top: 15px;
+
+	@media #{$breakpoint-laptop-small} {
+		padding-top: 22px;
+	}
+	@media #{$breakpoint-desktop-medium} {
+		padding-top: 32px;
+	}
 }
 
 #index {
@@ -461,7 +584,6 @@ span.exclusive {
 		width: 25px;
 		height: 25px;
 		text-align: center;
-		vertical-align: middle;
 		padding: 4px 0 0 0;
 		background: rgb(255, 255, 255);
 		@include gradient-vertical(rgba(255, 255, 255, 1), rgba(251, 251, 251, 1));
@@ -1138,7 +1260,7 @@ table.table_block td {
 	line-height: normal;
 	text-align: center;
 	padding: 0 0 15px;
-	margin-bottom: 12px;
+	margin-bottom: 13px;
 }
 
 h3.page-product-heading {
@@ -1778,6 +1900,14 @@ div.star a:hover {
 	padding-bottom: 10px;
 	text-align: center;
 
+	@media #{$breakpoint-tablet-land} {
+		padding-bottom: 20px;
+	}
+
+	@media #{$breakpoint-desktop-medium} {
+		padding-bottom: 50px;
+	}
+
 	#block_various_links_footer {
 		@include size(100%, auto);
 		overflow: hidden;
@@ -1830,8 +1960,8 @@ div.star a:hover {
 				margin-bottom: 20px;
 
 				li {
-					font-size: 18px;
-					line-height: 18px;
+					font-size: 16px;
+					line-height: 16px;
 				}
 			}
 		}
@@ -1841,8 +1971,12 @@ div.star a:hover {
 		@include size(100%, auto);
 		padding: 10px;
 
+		@media #{$breakpoint-tablet-land} {
+			padding: 20px 10px 10px;
+		}
+
 		@media #{$breakpoint-desktop-medium} {
-			padding: 20px;	
+			padding: 41px 20px 20px;
 		}
 
 		h4 {
@@ -1851,7 +1985,9 @@ div.star a:hover {
 			font-size: 18px;
 			line-height: 24px;
 			text-align: center;
+			color: black;
 			margin-bottom: 15px;
+
 		}
 
 		ul {

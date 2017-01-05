@@ -89,8 +89,9 @@
     #order-opc .flex-container .page-subheading {
       font-family: "Gotham-Medium";
       color: black;
-      font-size: 27px;
-      padding: 0px; }
+      font-size: 26px;
+      padding: 0px;
+      text-align: left; }
   #order-opc .flex-form-container {
     width: 100%;
     display: -webkit-flex;
@@ -116,7 +117,7 @@
   font-family: "Gotham-Medium";
   color: black;
   text-align: left;
-  font-size: 27px;
+  font-size: 26px;
   padding: 0px; }
 
 #new_account_form .id_state,

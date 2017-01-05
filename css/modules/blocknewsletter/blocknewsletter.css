@@ -25,6 +25,15 @@
   background-color: white;
   padding: 20px 16px;
   margin-bottom: 0; }
+  @media (min-width: 63.938em) {
+    #footer #newsletter_block_full {
+      padding: 30px 16px; } }
+  @media (min-width: 70em) {
+    #footer #newsletter_block_full {
+      padding: 40px 16px; } }
+  @media (min-width: 92em) {
+    #footer #newsletter_block_full {
+      padding: 50px 16px; } }
   #footer #newsletter_block_full h4 {
     font-family: "Gotham-Light";
     text-transform: uppercase;

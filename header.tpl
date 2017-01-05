@@ -76,6 +76,29 @@
 				<p>{l s='You cannot place a new order from your country.'}{if isset($geolocation_country) && $geolocation_country} <span class="bold">{$geolocation_country|escape:'html':'UTF-8'}</span>{/if}</p>
 			</div>
 		{/if}
+
+		{* 
+		
+		// TODO: Santiago hay que programar para que el modal se oculte cuando aceptan  
+		
+		<div id="modal-gateway">
+			<div class="modal-gateway-body">
+				<h2>Bienvenido a</h2>
+				<i class="icon-growlers"></i>
+
+				<p>¿Sos mayor de 18 años?</p>
+
+				<button class="btn-gateway negative">NO</button>
+				<button class="btn-gateway positive">SI</button>
+
+				<div class="modal-gateway-footer">
+					<span>Al confirmar ser mayor de edad manifiesta su conformidad con los términos de confidencialidad y el uso de cookies de estesitio web. Para más información, lea nuestra política de privacidad.</span> 
+					<span>Beber con moderación. Prohibida su venta a menores de 18 años.</span>
+				</div>
+			</div>
+		</div>
+		*}
+		
 		<div id="page">
 			
 			<div class="header-container">

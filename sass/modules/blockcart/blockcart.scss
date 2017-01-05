@@ -267,18 +267,16 @@
 	.cart_block {
 		position: absolute;
 		top: 55px; //95px
-		right: -55px; // 0
+		right: -134px; // -55px
 		z-index: 100;
 		display: none;
 		height: auto;
 		background: #e5e5e5;
 		color: black;
-		width: 270px;
-		@media (max-width: $screen-xs) {
-			width: 100%;
-		}
-		@media (max-width: $screen-lg){
-			width: 100%;
+		width: 280px;
+
+		@media #{$breakpoint-tablet-port}{
+			right: -55px;
 		}
 		// a {
 		// 	color: $light-text-color;

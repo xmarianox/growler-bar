@@ -169,6 +169,9 @@
   overflow: hidden;
   background-color: #e5e5e5;
   padding: 10px; }
+  @media (min-width: 92em) {
+    #homepage-slider-banner {
+      padding: 21px 10px; } }
   #homepage-slider-banner ul {
     width: 100%;
     height: auto;

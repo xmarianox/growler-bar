@@ -218,6 +218,10 @@ $screen-md-max:              ($screen-lg - 1) !default;
 	background-color: #e5e5e5;
 	padding: 10px;
 
+	@media #{$breakpoint-desktop-medium} {
+		padding: 21px 10px;
+	}
+
 	ul {
 		width: 100%;
 		height: auto;

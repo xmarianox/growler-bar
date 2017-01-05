@@ -208,19 +208,16 @@
 #header .cart_block {
   position: absolute;
   top: 55px;
-  right: -55px;
+  right: -134px;
   z-index: 100;
   display: none;
   height: auto;
   background: #e5e5e5;
   color: black;
-  width: 270px; }
-  @media (max-width: 480px) {
+  width: 280px; }
+  @media (min-width: 47em) {
     #header .cart_block {
-      width: 100%; } }
-  @media (max-width: 1200px) {
-    #header .cart_block {
-      width: 100%; } }
+      right: -55px; } }
   #header .cart_block .cart_block_list .remove_link a,
   #header .cart_block .cart_block_list .ajax_cart_block_remove_link {
     color: #868686;
