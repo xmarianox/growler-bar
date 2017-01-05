@@ -5988,6 +5988,9 @@ textarea {
     color: white;
     font-size: 26px;
     margin: 25px 8px; }
+    #modal-gateway .btn-gateway:hover, #modal-gateway .btn-gateway:active, #modal-gateway .btn-gateway:visited {
+      border: 2px solid #fb9f0b;
+      color: #fb9f0b; }
     @media (min-width: 70em) {
       #modal-gateway .btn-gateway {
         width: 80px;

@@ -145,6 +145,11 @@ textarea {
 		//
 		margin: 25px 8px;
 
+		&:hover, &:active, &:visited {
+			border: 2px solid #fb9f0b;
+			color: #fb9f0b;
+		}
+
 		@media #{$breakpoint-laptop-small} {
 			@include size(80px, 80px);
 			font-size: 30px;
