@@ -1,0 +1,257 @@
+a.jScrollArrowUp {
+	background: url(../img/basic_arrow_up.gif) repeat-x 0 0;
+}
+
+a.jScrollArrowUp:hover {
+	background-position: 0 -15px;
+}
+
+a.jScrollArrowDown {
+	background: url(../img/basic_arrow_down.gif) repeat-x 0 0;
+}
+
+a.jScrollArrowDown:hover {
+	background-position: 0 -15px;
+}
+
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	background-position: 0 -30px;
+}
+
+#pa_container {
+	/*overflow: hidden;*/
+	
+	margin: 10px 0;
+	padding-bottom: 10px;
+padding-top: 10px;
+}
+
+.pa_er_block {
+	float: left;
+	width: 105px;
+}
+
+.pa_er_block_scroll {
+	float: left;
+	width: 108px;
+}
+
+.pa_er_height {
+	height:320px;
+}
+
+.pa_er_height16{
+/*	height:380px;*/
+}
+
+#pa_container .exclusive span, .pa_b_product_container .exclusive span{
+font-size: 19px;
+line-height: 21px;
+padding: 2px 8px 3px;
+text-decoration: none;text-transform: uppercase;
+}
+
+.pa_erp_height {
+	height:310px;
+}
+
+.pa_erp_height16{
+	height: 190px;
+}
+
+.pa_er_header {
+	font-size:14px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+
+.pa_er_product_container {
+	width: 232px;
+	overflow: auto;
+}
+
+.pa_er_product_container16{
+	width:100%; /* 348px; */
+}
+
+.pa_er_image {
+	width: 80px;
+	margin: auto;
+}
+
+.pa_er_atc { 
+	margin: 6px auto 0 auto;
+	width: 60px;
+}
+
+.pa_er_accessories_price {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.pa_pf_block {
+	padding: 5px;border:1px solid transparent;
+}
+.pa_pf_block:hover{border:1px solid #CCC;}
+
+.pa_pf_block_scroll {
+	float: left;
+	width: 106px;
+}
+
+.pa_pf_height {
+	/*height:168px;*/
+}
+
+.pa_pf_height16 {
+	/*height:228px;*/
+}
+
+.pa_pfp_height {
+	/*height:148px;*/
+}
+
+.pa_pf_product_container {
+	/*width: 534px;
+	overflow: auto;*/
+}
+
+.pa_pfp_height16 {
+	height:168px;
+	width: 100%;
+}
+.pa_pf_header {
+    font-size: 45px;
+    font-family: 'Rama Gothic E SemiBold';
+    line-height: 1.2em;
+    padding: 20px 0;
+    color: #373f3e;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative; }
+.pa_pf_header:after{    content: " ";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 6px;
+    width: 80px;
+    background: #373f3e;}
+
+
+.pa_pf_image {
+	text-align: center;
+	margin: auto;
+}
+
+.pa_pf_atc { 
+	margin: 10px auto 0 auto;
+/*	width: 60px; */
+}
+
+#pa_bcontainer {
+	overflow: hidden;
+	margin: 10px 0;
+}
+
+#pa_bcontainer h5 {
+	margin-bottom:3px;
+}
+
+.pa_pf_accessories_price
+{
+	margin-top: 5px;
+	text-align: center;
+}
+
+.pa_b_block {
+	float: left;
+	width: 170px;
+}
+
+.pa_b_block_scroll {
+	float: left;
+	width: 170px;
+
+	height: 150px;
+}
+
+.pa_b_height {
+	height:330px;
+}
+
+.pa_b_height16{
+	height: 380px;
+}
+.pa_bp_height {
+	height:310px;
+}
+
+.pa_b_header {
+	font-size:14px;
+	margin-left: 5px;
+}
+.pa_b_product_container.ps_medium  {
+	width: 180px;
+	overflow: hidden;
+	background-color:  #e6e7e9;
+    border-left: 1px none #D0D3D8;
+    border-right: 1px none #D0D3D8;
+	padding-right: 15px;
+}
+
+.pa_b_product_container.ps_medium_default  {
+	width: 190px;
+	overflow: hidden;
+	background-color:  #e6e7e9;
+    border-left: 1px none #D0D3D8;
+    border-right: 1px none #D0D3D8;
+	padding-right: 15px;
+}
+
+.pa_b_product_container.ps_ver_150 {
+	width: 190px;
+	overflow: hidden;
+	background-color:  #e6e7e9;
+    border-left: 1px none #D0D3D8;
+    border-right: 1px none #D0D3D8;
+	padding-right: 15px;
+}
+
+.pa_b_image {
+	width: 80px;
+	margin: auto;
+}
+
+.pa_b_atc { 
+	margin: 6px auto 0 auto;
+	width: 60px;
+}
+
+.pa_b_accessories_price
+{
+	margin-top: 5px;
+	text-align: center;
+}
+
+.align_center{
+	text-align: center;
+}
+
+.pa_b_image.ps_image_medium_default,.pa_er_image.ps_image_medium_default,.pa_pf_image.ps_image_medium_default{
+	/*width: 58px;*/
+}
+
+
+/*PS 1.6 */
+.pa_b_product_container.ps_ver_160.ps_medium_default{
+	width: 100%;
+}
+
+#pa_container h5.align_center{
+	height: 30px;font-size:16px;font-family:"HelveticaNeueConds" , Helvetica, sans-serif;font-weight: bold;text-transform: uppercase;
+}
+#pa_container h5.align_center a{color:#373f3e;}
