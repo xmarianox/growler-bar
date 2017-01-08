@@ -1019,6 +1019,15 @@ Product accesories
 	}
 }
 
+#pa_container .exclusive span, 
+.pa_b_product_container .exclusive span {
+	font-size: 13px;
+	line-height: 22px;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 //Homepage Tabs
 #home-page-tabs {
 	border: none;

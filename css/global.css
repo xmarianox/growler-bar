@@ -6752,6 +6752,14 @@ Product accesories
   #pa_container .slides li img {
     margin: 0 auto; }
 
+#pa_container .exclusive span,
+.pa_b_product_container .exclusive span {
+  font-size: 13px;
+  line-height: 22px;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 #home-page-tabs {
   border: none;
   border-bottom: 1px solid #d6d4d4;
