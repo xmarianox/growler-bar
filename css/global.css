@@ -6740,6 +6740,18 @@ table.table_block td {
       width: 100%;
       height: auto; }
 
+Product accesories
+#pa_container .bx-wrapper {
+  max-width: 100%; }
+Product accesories
+#pa_container .slides {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  Product accesories
+  #pa_container .slides li img {
+    margin: 0 auto; }
+
 #home-page-tabs {
   border: none;
   border-bottom: 1px solid #d6d4d4;
