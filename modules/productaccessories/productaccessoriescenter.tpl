@@ -93,7 +93,7 @@
           }
         });
 		*/
-		$('.flexprod').bxSlider({
+		$('.flexprod .slides').bxSlider({
 			slideWidth: 210,
 			minSlides: getGridSize(),
 			maxSlides: getGridSize(),
