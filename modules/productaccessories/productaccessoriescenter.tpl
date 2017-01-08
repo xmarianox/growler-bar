@@ -95,9 +95,10 @@
 		*/
 		$('.flexprod .slides').bxSlider({
 			slideWidth: 210,
-			minSlides: getGridSize(),
-			maxSlides: getGridSize(),
-			slideMargin: 0
+			minSlides: 1,
+			maxSlides: 5,
+			slideMargin: 0,
+			infiniteLoop: false
 		});
 
       });

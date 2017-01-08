@@ -44,10 +44,11 @@ a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
 }
 
 #pa_container .exclusive span, .pa_b_product_container .exclusive span{
-font-size: 13px;
-line-height: 22px;
-padding: 5px 15px;
-text-decoration: none;text-transform: uppercase;
+	font-size: 13px;
+	line-height: 22px;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .pa_erp_height {
