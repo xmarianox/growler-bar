@@ -67,8 +67,7 @@
 (function() {
 
       // store the slider in a local variable
-      var $window = $(window),
-          flexslider;
+      var $window = $(window), bxSlider; // flexslider;
 
       // tiny helper function to add breakpoints
       function getGridSize() {
@@ -77,7 +76,8 @@
       }
 
       $window.load(function() {
-        $('.flexprod').flexslider({
+        /**
+		$('.flexprod').flexslider({
           animation: "slide",
           animationSpeed: 400,
           animationLoop: true,
@@ -92,15 +92,23 @@
             flexslider = slider;
           }
         });
+		*/
+		$('.flexprod').bxSlider({
+			slideWidth: 210,
+			minSlides: getGridSize(),
+			maxSlides: getGridSize(),
+			slideMargin: 0
+		});
 
       });
 
       // check grid size on resize event
       $window.resize(function() {
         var gridSize = getGridSize();
-
-        flexslider.vars.minItems = gridSize;
-        flexslider.vars.maxItems = gridSize;
+        // flexslider.vars.minItems = gridSize;
+        // flexslider.vars.maxItems = gridSize;
+		bxSlider.vars.minItems = gridSize;
+        bxSlider.vars.maxItems = gridSize;
       });
     }());
 </script>

@@ -30,11 +30,6 @@
 						<a href="{$accessoryLink|escape:'htmlall':'UTF-8'}" target="_blank" title="{$accessory.legend|escape:'htmlall':'UTF-8'}" class="product_image">
 							<img src="{if $pa_old_img}{$img_prod_dir}{$accessory.id_image}-{$pa_image}.jpg{else}{$link->getImageLink($accessory.link_rewrite, $accessory.id_image, $pa_image)}{/if}" alt="{$accessory.legend|escape:'htmlall':'UTF-8'}" />
 						</a>
-
-
-
-
-
 					</div>
 					<div class="pa_er_accessories_price">
 						<div class="price">{if !$priceDisplay}{displayWtPrice p=$accessory.price}{else}{displayWtPrice p=$accessory.price_tax_exc}{/if}</div>

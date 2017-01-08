@@ -20,10 +20,9 @@ a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
 
 #pa_container {
 	/*overflow: hidden;*/
-	
 	margin: 10px 0;
 	padding-bottom: 10px;
-padding-top: 10px;
+	padding-top: 10px;
 }
 
 .pa_er_block {
@@ -45,9 +44,9 @@ padding-top: 10px;
 }
 
 #pa_container .exclusive span, .pa_b_product_container .exclusive span{
-font-size: 19px;
-line-height: 21px;
-padding: 2px 8px 3px;
+font-size: 13px;
+line-height: 22px;
+padding: 5px 15px;
 text-decoration: none;text-transform: uppercase;
 }
 
