@@ -95,8 +95,8 @@
 		*/
 		$('.flexprod .slides').bxSlider({
 			slideWidth: 210,
-			minSlides: 1,
-			maxSlides: 5,
+			minSlides: getGridSize(),
+			maxSlides: getGridSize(),
 			slideMargin: 0,
 			infiniteLoop: false
 		});
@@ -108,8 +108,8 @@
         var gridSize = getGridSize();
         // flexslider.vars.minItems = gridSize;
         // flexslider.vars.maxItems = gridSize;
-		bxSlider.vars.minItems = gridSize;
-        bxSlider.vars.maxItems = gridSize;
+		bxSlider.vars.minSlides = gridSize;
+        bxSlider.vars.maxSlides = gridSize;
       });
     }());
 </script>

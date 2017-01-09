@@ -1001,10 +1001,11 @@ table.table_block td {
 	}
 }
 
+//RelatedProducts
 #pa_container {
 
 	.bx-wrapper {
-		max-width: 100%;
+		max-width: 100% !important;
 
 		img {
 			margin: 0 auto;
@@ -1015,7 +1016,7 @@ table.table_block td {
 		@include size(100%, auto);
 		overflow: hidden;
 
-		li {
+		.product_image {
 			img {
 				margin: 0 auto;
 			}

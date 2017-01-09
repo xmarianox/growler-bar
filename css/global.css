@@ -6741,14 +6741,14 @@ table.table_block td {
       height: auto; }
 
 #pa_container .bx-wrapper {
-  max-width: 100%; }
+  max-width: 100% !important; }
   #pa_container .bx-wrapper img {
     margin: 0 auto; }
 #pa_container .slides {
   width: 100%;
   height: auto;
   overflow: hidden; }
-  #pa_container .slides li img {
+  #pa_container .slides .product_image img {
     margin: 0 auto; }
 
 #pa_container .exclusive span,
