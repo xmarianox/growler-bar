@@ -1001,12 +1001,17 @@ table.table_block td {
 	}
 }
 
-Product accesories
+//Product accesories
 #pa_container {
 
 	.bx-wrapper {
 		max-width: 100%;
+
+		img {
+			margin: 0 auto;
+		}
 	}
+
 	.slides {
 		@include size(100%, auto);
 		overflow: hidden;
