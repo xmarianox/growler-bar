@@ -94,7 +94,7 @@
         });
 		*/
 		$('.flexprod .slides').bxSlider({
-			slideWidth: 210,
+			slideWidth: 234,
 			minSlides: getGridSize(),
 			maxSlides: getGridSize(),
 			slideMargin: 0,
