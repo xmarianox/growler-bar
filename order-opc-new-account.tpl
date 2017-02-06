@@ -419,7 +419,7 @@
 						<p class="required opc-required">
 							<sup>*</sup>{l s='Required field'}
 						</p>
-						<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium pull-right"><span>{l s='Save'}<i class="icon-chevron-right right"></i></span></button>
+						<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium pull-right"><span>{l s='Siguiente'}<i class="icon-chevron-right right"></i></span></button>
 					</div>
 					<div style="display: none;" id="opc_account_saved" class="alert alert-success">
 						{l s='Account information saved successfully'}

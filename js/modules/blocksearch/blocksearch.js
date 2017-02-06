@@ -32,7 +32,7 @@ $(document).ready(function()
 	var $input = $("#search_query_" + blocksearch_type);
 
 	var width_ac_results = 	$input.parent('form').outerWidth();
-	if (typeof ajaxsearch != 'undefined' && ajaxsearch) {
+/*	if (typeof ajaxsearch != 'undefined' && ajaxsearch) {
 		$input.autocomplete(
 			search_url,
 			{
@@ -61,7 +61,7 @@ $(document).ready(function()
 			$input.val(data.pname);
 			document.location.href = data.product_link;
 		});
-	}
+	}*/
 
 	if (typeof instantsearch != 'undefined' && instantsearch) {
 		$input.on('keyup', function(){

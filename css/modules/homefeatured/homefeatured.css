@@ -1,3 +1,9 @@
+.tab-content > .tab-pane.row.product_list {
+	display: none;
+}
 
+.tab-content > .tab-pane.row.product_list.active {
+	display: flex;
+}
 
 /*# sourceMappingURL=homefeatured.css.map */

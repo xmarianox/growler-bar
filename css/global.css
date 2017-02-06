@@ -8898,3 +8898,6 @@ span[id^="crMz"] {
   text-indent: -9999px; }
 
 /*# sourceMappingURL=global.css.map */
+a.sf-with-ul.nolink {
+	cursor: default;
+}

@@ -391,6 +391,12 @@ function dropDown()
 		$(elementHide).slideUp();
 		$(elementClick).removeClass('active');
 	});
+	
+	var marcas = $('.sf-menu').find('a[title="Marcas"]').addClass('nolink').attr('href', '#');
+	var estilos = $('.sf-menu').find('a[title="Estilos"]').addClass('nolink').attr('href', '#');
+	
+	marcas.contents().unwrap().wrap('<span/>');
+	estilos.contents().unwrap().wrap('<span/>');
 }
 
 function accordionFooter(status)

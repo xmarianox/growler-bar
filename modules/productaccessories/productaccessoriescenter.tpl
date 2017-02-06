@@ -19,7 +19,7 @@
 		{rdelim});
 	</script>
 	<div id="pa_container" class="block_content pa_pf_height">
-		<h3 class="page-product-heading">{l s='ACCESORIOS RECOMENDADOS' mod='productaccessories'}</h3>
+		<h3 class="page-product-heading">{l s='Productos relacionados' mod='productaccessories'}</h3>
 		<div class="pa_pf_product_container pa_pfp_height">
 			
 <div class="container-slider cargando">
